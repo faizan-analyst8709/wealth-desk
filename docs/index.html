@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wealth Desk · Paper Trading</title>
+<script src="chart.umd.min.js"></script>
+<style>
+:root{--bg:#0b0f17;--panel:#121826;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--up:#22c55e;--dn:#ef4444;--acc:#60a5fa;--warn:#f59e0b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.45 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.banner{background:#3b2a07;color:#fcd34d;border-bottom:1px solid #78350f;padding:8px 20px;font-weight:600;text-align:center}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px 4px}
+h1{font-size:20px;margin:0;letter-spacing:.3px}h1 span{color:var(--acc)}
+.meta{color:var(--mut);font-size:12px;text-align:right}
+.grid{display:grid;gap:16px;padding:12px 24px}
+.top{grid-template-columns:300px 1fr 320px}.mid{grid-template-columns:1.4fr 1fr}.bot{grid-template-columns:1.5fr 1fr}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.card h2{font-size:13px;text-transform:uppercase;letter-spacing:.8px;color:var(--mut);margin:0 0 12px;font-weight:600}
+.big{font-size:34px;font-weight:700;letter-spacing:-.5px}.row{display:flex;justify-content:space-between;margin:6px 0}
+.up{color:var(--up)}.dn{color:var(--dn)}.mut{color:var(--mut)}.small{font-size:12px}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600}
+.pill.bt{background:#1e293b;color:#93c5fd}.pill.lv{background:#052e16;color:#86efac}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:7px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase}th:first-child,td:first-child{text-align:left}
+.heat td{text-align:center;font-size:12px;padding:5px 4px;border:1px solid var(--bg)}
+.scroll{max-height:380px;overflow:auto}.reason{white-space:normal;text-align:left;color:var(--mut);min-width:230px;font-size:12px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.kpi{background:#0f1520;border-radius:8px;padding:8px}
+.kpi b{display:block;font-size:18px}.kpi span{font-size:11px;color:var(--mut)}
+.note{color:var(--mut);font-size:12px;padding:0 24px 24px}
+</style></head><body>
+<div class="banner">⚠ Simulated paper trading, not financial advice. No real money, no brokerage. Backtest figures are hypothetical.</div>
+<header><h1>Wealth <span>Desk</span></h1><div class="meta" id="meta">loading…</div></header>
+<div class="grid top">
+  <div class="card"><h2>Portfolio value <span class="pill lv">LIVE since <span id="ls"></span></span></h2>
+    <div class="big" id="eq">—</div>
+    <div class="row"><span class="mut">1D change</span><span id="d1"></span></div>
+    <div class="row"><span class="mut">Total change</span><span id="tot"></span></div>
+    <div class="row"><span class="mut">SPY buy &amp; hold</span><span id="spy"></span></div>
+    <div class="row"><span class="mut">vs SPY</span><span id="vs"></span></div>
+    <div class="row"><span class="mut">Cash</span><span id="cash"></span></div>
+    <hr style="border-color:var(--line)">
+    <div class="small"><span class="pill bt">BACKTEST</span> <span id="btl" class="mut"></span></div>
+    <div class="row small"><span class="mut">Strategy</span><span id="btr"></span></div>
+    <div class="row small"><span class="mut">SPY buy &amp; hold</span><span id="bts"></span></div>
+    <div class="row small"><span class="mut">Max drawdown (strat / SPY)</span><span id="btdd"></span></div>
+    <div class="row small"><span class="mut">Trades · win rate</span><span id="btt"></span></div>
+  </div>
+  <div class="card"><h2>Performance vs SPY <span class="pill bt">backtest</span> <span class="pill lv">live</span></h2><div style="height:330px"><canvas id="perf"></canvas></div></div>
+  <div class="card"><h2>Allocation (live)</h2><div style="height:330px"><canvas id="alloc"></canvas></div></div>
+</div>
+<div class="grid mid">
+  <div class="card"><h2>Monthly returns (%)</h2><div style="overflow:auto"><table class="heat" id="heat"></table></div>
+    <div class="small mut" style="margin-top:6px">* Strategy row = hypothetical backtest (from 2025-11-18) chain-linked with live results. Nov 2025 for stocks is the full month; strategy started on the 18th. Current month is month-to-date.</div></div>
+  <div class="card"><h2>Risk vs return (trailing 12m)</h2><div style="height:290px"><canvas id="risk"></canvas></div>
+    <div class="kpis"><div class="kpi"><span>Sharpe (rf 0%)</span><b id="sh"></b></div><div class="kpi"><span>Beta vs SPY</span><b id="be"></b></div>
+    <div class="kpi"><span>Max drawdown</span><b id="md"></b></div><div class="kpi"><span>Ann. volatility</span><b id="vo"></b></div></div>
+    <div class="small mut" style="margin-top:6px">Strategy metrics over backtest + live, daily data.</div></div>
+</div>
+<div class="grid bot">
+  <div class="card"><h2>Holdings (live)</h2><div class="scroll"><table id="hold"></table></div>
+    <h2 style="margin-top:18px">Watchlist · 50-day MA filter</h2><div class="scroll"><table id="watch"></table></div></div>
+  <div class="card"><h2>Rebalance log</h2><div class="scroll" style="max-height:640px"><table id="log"></table></div></div>
+</div>
+<div class="note" id="rules"></div>
+<script>
+const $=id=>document.getElementById(id), C=Chart;
+C.defaults.color='#8b95a7';C.defaults.borderColor='#1f2937';C.defaults.font.family='Inter,system-ui,sans-serif';
+const usd=v=>(v<0?'-$':'$')+Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const sg=v=>(v>=0?'+':'')+v.toFixed(2);
+const cls=v=>v>=0?'up':'dn';
+const chg=(d,p)=>`<span class="${cls(d)}">${d>=0?'+':'-'}$${Math.abs(d).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})} (${sg(p)}%)</span>`;
+const charts={};
+function mk(id,cfg){if(charts[id]){charts[id].data=cfg.data;charts[id].update('none');return}charts[id]=new C($(id),cfg)}
+const PAL=['#60a5fa','#22c55e','#f59e0b','#a78bfa','#f472b6','#34d399','#fb7185','#38bdf8','#facc15','#c084fc','#4ade80','#475569'];
+function heatColor(v){if(v==null)return'#0f1520';const a=Math.min(Math.abs(v)/15,1);return v>=0?`rgba(34,197,94,${.15+.75*a})`:`rgba(239,68,68,${.15+.75*a})`}
+async function load(){
+ let s;try{s=await (await fetch('data/summary.json?t='+Date.now(),{cache:'no-store'})).json()}catch(e){$('meta').textContent='Could not load data/summary.json';return}
+ const L=s.live,B=s.backtest,M=s.metrics;
+ $('meta').innerHTML=`Data: ${s.data_source} · market date ${s.data_market_date} · quote ${s.data_price_time_pkt||'n/a'}<br>${s.price_basis}<br>Data file updated ${s.generated_pkt} · refreshed hourly by GitHub Actions · page re-checks every 60s`+(s.stale_symbols.length?`<br><span class="dn">Stale: ${s.stale_symbols.join(', ')}</span>`:'');
+ $('ls').textContent=L.start_date;$('eq').textContent=usd(L.equity);
+ $('d1').innerHTML=chg(L.day_pl,L.day_pl_pct);$('tot').innerHTML=chg(L.total_pl,L.total_pl_pct);
+ $('spy').innerHTML=`${usd(L.spy_equity)} <span class="${cls(L.spy_total_pct)}">(${sg(L.spy_total_pct)}%)</span>`;
+ $('vs').innerHTML=`<span class="${cls(L.vs_spy_pct)}">${sg(L.vs_spy_pct)} pts</span>`;$('cash').textContent=usd(L.cash);
+ $('btl').textContent=`${B.start} → ${B.end}, $100k start (hypothetical)`;
+ $('btr').innerHTML=`<span class="${cls(B.total_return_pct)}">${sg(B.total_return_pct)}%</span> (${usd(B.end_equity)})`;
+ $('bts').innerHTML=`<span class="${cls(B.spy_return_pct)}">${sg(B.spy_return_pct)}%</span> (${usd(B.spy_end_equity)})`;
+ $('btdd').textContent=`${B.max_drawdown_pct}% / ${B.spy_max_drawdown_pct}%`;$('btt').textContent=`${B.trades} · ${B.win_rate_pct}% of sells profitable`;
+ const bt=s.curve.backtest,lv=s.curve.live;const labels=[...bt.map(r=>r.d),...lv.map(r=>r.d+' (live)')];
+ const pad=n=>Array(n).fill(null);
+ mk('perf',{type:'line',data:{labels,datasets:[
+  {label:'Strategy · backtest',data:[...bt.map(r=>r.s),...pad(lv.length)],borderColor:'#60a5fa',borderWidth:2,pointRadius:0,tension:.1},
+  {label:'SPY · backtest',data:[...bt.map(r=>r.b),...pad(lv.length)],borderColor:'#64748b',borderWidth:1.5,pointRadius:0,borderDash:[4,3]},
+  {label:'Strategy · live ($100k reset)',data:[...pad(bt.length),...lv.map(r=>r.s)],borderColor:'#22c55e',borderWidth:2.5,pointRadius:3},
+  {label:'SPY · live',data:[...pad(bt.length),...lv.map(r=>r.b)],borderColor:'#f59e0b',borderWidth:2,pointRadius:3}]},
+  options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{boxWidth:12}}},
+   scales:{x:{ticks:{maxTicksLimit:10}},y:{ticks:{callback:v=>'$'+(v/1000).toFixed(0)+'k'}}}}});
+ mk('alloc',{type:'doughnut',data:{labels:s.allocation.map(a=>a.label),datasets:[{data:s.allocation.map(a=>a.value),backgroundColor:s.allocation.map((a,i)=>a.label=='Cash'?'#334155':PAL[i%PAL.length]),borderColor:'#121826'}]},
+  options:{maintainAspectRatio:false,cutout:'62%',plugins:{legend:{position:'bottom',labels:{boxWidth:10}},tooltip:{callbacks:{label:c=>`${c.label}: ${usd(c.raw)} (${(c.raw/L.equity*100).toFixed(1)}%)`}}}}});
+ const H=s.heatmap;$('heat').innerHTML='<tr><th></th>'+H.months.map(m=>`<th>${m.slice(2)}</th>`).join('')+'</tr>'+H.rows.map(r=>`<tr><td style="text-align:left;font-weight:600">${r.name}</td>`+r.vals.map(v=>`<td style="background:${heatColor(v)}">${v==null?'':v.toFixed(1)}</td>`).join('')+'</tr>').join('');
+ mk('risk',{type:'scatter',data:{datasets:s.risk.map((r,i)=>({label:r.name,data:[{x:r.vol,y:r.ann_ret}],pointRadius:r.name.startsWith('Strat')||r.name=='SPY'?8:5,
+  backgroundColor:r.name.startsWith('Strat')?'#22c55e':r.name=='SPY'?'#f59e0b':'#60a5fa'}))},
+  options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ret ${c.raw.y}% · vol ${c.raw.x}%`}}},
+   scales:{x:{title:{display:true,text:'Annualised volatility %'}},y:{title:{display:true,text:'Annualised return %'}}}},
+  plugins:[{id:'lbl',afterDatasetsDraw(ch){const x=ch.ctx;x.save();x.fillStyle='#cbd5e1';x.font='11px sans-serif';ch.data.datasets.forEach((d,i)=>{const p=ch.getDatasetMeta(i).data[0];if(p)x.fillText(d.label,p.x+7,p.y-5)});x.restore()}}]});
+ $('sh').textContent=M.sharpe;$('be').textContent=M.beta;$('md').textContent=M.max_dd+'%';$('vo').textContent=M.vol+'%';
+ $('hold').innerHTML='<tr><th>Symbol</th><th>Shares</th><th>Price</th><th>Today</th><th>Value</th><th>Weight</th><th>Cost basis</th><th>Unrealized</th><th>Total ret</th></tr>'+
+  s.holdings.map(h=>`<tr><td><b>${h.symbol}</b></td><td>${h.shares}</td><td>${usd(h.price)}</td><td class="${cls(h.chg)}">${sg(h.chg_pct)}%</td><td>${usd(h.value)}</td><td>${h.weight_pct.toFixed(1)}%</td><td>${usd(h.cost_basis)}</td><td class="${cls(h.unrealized)}">${usd(h.unrealized)}</td><td class="${cls(h.total_ret_pct)}">${sg(h.total_ret_pct)}%</td></tr>`).join('')+
+  `<tr><td class="mut">Cash</td><td></td><td></td><td></td><td>${usd(L.cash)}</td><td>${(L.cash/L.equity*100).toFixed(1)}%</td><td></td><td></td><td></td></tr>`;
+ $('watch').innerHTML='<tr><th>Symbol</th><th>Price</th><th>Day chg</th><th>50-day MA</th><th>Signal</th></tr>'+s.watchlist.map(w=>`<tr><td><b>${w.symbol}</b></td><td>${usd(w.price)}</td><td class="${cls(w.chg)}">${chg(w.chg,w.chg_pct)}</td><td>${w.sma50?usd(w.sma50):'—'}</td><td class="${w.above_sma?'up':'dn'}">${w.above_sma?'▲ above → hold':'▼ below → cash'}</td></tr>`).join('');
+ $('log').innerHTML='<tr><th>When</th><th>Side</th><th>Qty</th><th>Ticker</th><th>Price</th><th>Reason</th></tr>'+s.recent_trades.map(t=>`<tr><td>${t.timestamp_pkt} <span class="pill ${t.phase=='live'?'lv':'bt'}">${t.phase}</span></td><td class="${t.side=='BUY'?'up':'dn'}"><b>${t.side}</b></td><td>${t.shares}</td><td><b>${t.symbol}</b></td><td>${usd(+t.price)}</td><td class="reason">${t.reason}</td></tr>`).join('');
+ const st=s.strategy;$('rules').innerHTML=`<b>Strategy (rules-based, no AI per trade):</b> ${st.rules.join(' ')} Universe: ${st.tickers.join(', ')}; benchmark ${st.benchmark}. Extra picks: ${Object.entries(st.extras).map(([k,v])=>`<b>${k}</b> – ${v}`).join('; ')}.<br>${s.disclaimer}`;
+}
+load();setInterval(load,60000);
+</script></body></html>

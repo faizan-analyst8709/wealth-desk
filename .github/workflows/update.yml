@@ -1,0 +1,46 @@
+name: Update Wealth Desk (hourly, paper trading)
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: wealth-desk-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Fetch real prices and update paper portfolio
+        run: python engine.py update
+      - name: Commit if data changed
+        id: commit
+        run: |
+          git config user.name "wealth-desk-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A state data docs
+          if git diff --cached --quiet; then
+            echo "No data change; nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: hourly update $(TZ=Asia/Karachi date '+%Y-%m-%d %H:%M PKT')"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4

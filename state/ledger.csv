@@ -1,0 +1,5 @@
+timestamp_pkt,date,phase,side,symbol,shares,price,fee,value,reason
+2026-11-18 11:09 PKT,2026-11-18,live,BUY,AMZN,35,257.89,9.03,9026.15,close $257.89 above 50-day MA $254.81; buy to equal weight 9.09%
+2026-11-18 11:09 PKT,2026-11-18,live,BUY,TSLA,23,380.11,8.74,8742.53,close $380.11 above 50-day MA $375.49; buy to equal weight 9.09%
+2026-11-18 11:09 PKT,2026-11-18,live,BUY,AAPL,25,351.91,8.8,8797.75,close $351.91 above 50-day MA $340.41; buy to equal weight 9.09%
+2026-11-18 11:09 PKT,2026-11-18,live,BUY,BRK-B,15,586.76,8.8,8801.4,close $586.76 above 50-day MA $533.01; buy to equal weight 9.09%

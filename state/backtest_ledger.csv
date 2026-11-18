@@ -1,0 +1,289 @@
+timestamp_pkt,date,phase,side,symbol,shares,price,fee,value,reason
+2025-11-18,2025-11-18,backtest,BUY,GOOGL,31,284.28,8.81,8812.68,close $284.28 above 50-day MA $259.15; buy to equal weight 9.09%
+2025-11-18,2025-11-18,backtest,BUY,AMD,39,230.29,8.98,8981.31,close $230.29 above 50-day MA $211.32; buy to equal weight 9.09%
+2025-11-18,2025-11-18,backtest,BUY,AAPL,33,267.44,8.83,8825.52,close $267.44 above 50-day MA $257.18; buy to equal weight 9.09%
+2025-11-18,2025-11-18,backtest,BUY,BRK-B,18,504.37,9.08,9078.66,close $504.37 above 50-day MA $493.97; buy to equal weight 9.09%
+2025-11-19,2025-11-19,backtest,BUY,NVDA,48,186.52,8.95,8952.96,close $186.52 above 50-day MA $186.37; buy to equal weight 9.09%
+2025-11-19,2025-11-19,backtest,BUY,AVGO,25,354.42,8.86,8860.5,close $354.42 above 50-day MA $348.80; buy to equal weight 9.09%
+2025-11-20,2025-11-20,backtest,SELL,NVDA,48,180.64,8.67,8670.72,close $180.64 fell below 50-day MA $186.44; move slice to cash
+2025-11-20,2025-11-20,backtest,SELL,AMD,39,206.02,8.03,8034.78,close $206.02 fell below 50-day MA $213.61; move slice to cash
+2025-11-20,2025-11-20,backtest,SELL,AVGO,25,346.82,8.67,8670.5,close $346.82 fell below 50-day MA $348.54; move slice to cash
+2025-11-24,2025-11-24,backtest,BUY,AVGO,24,377.96,9.07,9071.04,close $377.96 above 50-day MA $348.43; buy to equal weight 9.09%
+2025-11-25,2025-11-25,backtest,BUY,AMZN,39,229.67,8.96,8957.13,close $229.67 above 50-day MA $227.58; buy to equal weight 9.09%
+2025-11-26,2025-11-26,backtest,BUY,JPM,29,307.64,8.92,8921.56,close $307.64 above 50-day MA $307.02; buy to equal weight 9.09%
+2025-12-01,2025-12-01,backtest,SELL,GOOGL,3,314.89,0.94,944.67,monthly rebalance back to target weight 9.09%
+2025-12-01,2025-12-01,backtest,SELL,BRK-B,1,508.55,0.51,508.55,monthly rebalance back to target weight 9.09%
+2025-12-03,2025-12-03,backtest,BUY,TSLA,20,446.74,8.93,8934.8,close $446.74 above 50-day MA $434.35; buy to equal weight 9.09%
+2025-12-08,2025-12-08,backtest,SELL,AMZN,39,226.89,8.85,8848.71,close $226.89 fell below 50-day MA $228.53; move slice to cash
+2025-12-09,2025-12-09,backtest,SELL,JPM,29,300.51,8.71,8714.79,close $300.51 fell below 50-day MA $306.56; move slice to cash
+2025-12-09,2025-12-09,backtest,SELL,BRK-B,17,491.43,8.35,8354.31,close $491.43 fell below 50-day MA $496.87; move slice to cash
+2025-12-10,2025-12-10,backtest,BUY,AMZN,39,231.78,9.04,9039.42,close $231.78 above 50-day MA $228.89; buy to equal weight 9.09%
+2025-12-10,2025-12-10,backtest,BUY,JPM,29,310.11,8.99,8993.19,close $310.11 above 50-day MA $306.45; buy to equal weight 9.09%
+2025-12-12,2025-12-12,backtest,SELL,AMZN,39,226.19,8.82,8821.41,close $226.19 fell below 50-day MA $229.16; move slice to cash
+2025-12-12,2025-12-12,backtest,SELL,AVGO,24,359.93,8.64,8638.32,close $359.93 fell below 50-day MA $361.99; move slice to cash
+2025-12-12,2025-12-12,backtest,BUY,BRK-B,17,499.52,8.49,8491.84,close $499.52 above 50-day MA $496.64; buy to equal weight 9.09%
+2025-12-18,2025-12-18,backtest,BUY,META,13,664.45,8.64,8637.85,close $664.45 above 50-day MA $662.69; buy to equal weight 9.09%
+2025-12-19,2025-12-19,backtest,SELL,META,13,658.77,8.56,8564.01,close $658.77 fell below 50-day MA $661.20; move slice to cash
+2025-12-19,2025-12-19,backtest,SELL,BRK-B,17,494.53,8.41,8407.01,close $494.53 fell below 50-day MA $496.86; move slice to cash
+2025-12-22,2025-12-22,backtest,BUY,META,13,661.5,8.6,8599.5,close $661.50 above 50-day MA $660.32; buy to equal weight 9.09%
+2025-12-22,2025-12-22,backtest,BUY,BRK-B,18,499.95,9.0,8999.1,close $499.95 above 50-day MA $497.08; buy to equal weight 9.09%
+2025-12-23,2025-12-23,backtest,BUY,NVDA,47,189.21,8.89,8892.87,close $189.21 above 50-day MA $185.68; buy to equal weight 9.09%
+2025-12-23,2025-12-23,backtest,BUY,AMZN,38,232.14,8.82,8821.32,close $232.14 above 50-day MA $229.75; buy to equal weight 9.09%
+2025-12-31,2025-12-31,backtest,SELL,AMZN,38,230.82,8.77,8771.16,close $230.82 fell below 50-day MA $231.44; move slice to cash
+2025-12-31,2025-12-31,backtest,SELL,AAPL,33,271.86,8.97,8971.38,close $271.86 fell below 50-day MA $272.66; move slice to cash
+2026-01-02,2026-01-02,backtest,SELL,META,13,650.41,8.46,8455.33,close $650.41 fell below 50-day MA $652.22; move slice to cash
+2026-01-02,2026-01-02,backtest,SELL,TSLA,20,438.07,8.76,8761.4,close $438.07 fell below 50-day MA $445.01; move slice to cash
+2026-01-02,2026-01-02,backtest,SELL,JPM,2,325.48,0.65,650.96,monthly rebalance back to target weight 9.09%
+2026-01-02,2026-01-02,backtest,SELL,BRK-B,18,496.85,8.94,8943.3,close $496.85 fell below 50-day MA $498.15; move slice to cash
+2026-01-05,2026-01-05,backtest,BUY,AMZN,38,233.06,8.86,8856.28,close $233.06 above 50-day MA $231.83; buy to equal weight 9.09%
+2026-01-05,2026-01-05,backtest,BUY,META,13,658.79,8.56,8564.27,close $658.79 above 50-day MA $650.72; buy to equal weight 9.09%
+2026-01-05,2026-01-05,backtest,BUY,TSLA,19,451.67,8.58,8581.73,close $451.67 above 50-day MA $445.27; buy to equal weight 9.09%
+2026-01-05,2026-01-05,backtest,BUY,BRK-B,17,498.52,8.47,8474.84,close $498.52 above 50-day MA $498.28; buy to equal weight 9.09%
+2026-01-06,2026-01-06,backtest,SELL,TSLA,19,432.96,8.23,8226.24,close $432.96 fell below 50-day MA $444.95; move slice to cash
+2026-01-07,2026-01-07,backtest,SELL,BRK-B,17,496.12,8.43,8434.04,close $496.12 fell below 50-day MA $498.54; move slice to cash
+2026-01-08,2026-01-08,backtest,SELL,NVDA,47,185.04,8.7,8696.88,close $185.04 fell below 50-day MA $186.70; move slice to cash
+2026-01-08,2026-01-08,backtest,BUY,BRK-B,17,499.77,8.5,8496.09,close $499.77 above 50-day MA $498.77; buy to equal weight 9.09%
+2026-01-09,2026-01-09,backtest,SELL,BRK-B,17,499.1,8.48,8484.7,close $499.10 fell below 50-day MA $499.13; move slice to cash
+2026-01-09,2026-01-09,backtest,BUY,TSLA,20,445.01,8.9,8900.2,close $445.01 above 50-day MA $444.26; buy to equal weight 9.09%
+2026-01-13,2026-01-13,backtest,SELL,META,13,631.09,8.2,8204.17,close $631.09 fell below 50-day MA $640.50; move slice to cash
+2026-01-13,2026-01-13,backtest,SELL,JPM,27,310.9,8.39,8394.3,close $310.90 fell below 50-day MA $315.00; move slice to cash
+2026-01-13,2026-01-13,backtest,BUY,NVDA,47,185.81,8.73,8733.07,close $185.81 above 50-day MA $185.59; buy to equal weight 9.09%
+2026-01-14,2026-01-14,backtest,SELL,NVDA,47,183.14,8.61,8607.58,close $183.14 fell below 50-day MA $185.20; move slice to cash
+2026-01-14,2026-01-14,backtest,SELL,TSLA,20,439.2,8.78,8784.0,close $439.20 fell below 50-day MA $443.80; move slice to cash
+2026-01-14,2026-01-14,backtest,BUY,AMD,39,223.6,8.72,8720.4,close $223.60 above 50-day MA $221.52; buy to equal weight 9.09%
+2026-01-15,2026-01-15,backtest,BUY,NVDA,47,187.05,8.79,8791.35,close $187.05 above 50-day MA $184.81; buy to equal weight 9.09%
+2026-01-20,2026-01-20,backtest,SELL,NVDA,47,178.07,8.37,8369.29,close $178.07 fell below 50-day MA $184.22; move slice to cash
+2026-01-20,2026-01-20,backtest,SELL,AMZN,38,231.0,8.78,8778.0,close $231.00 fell below 50-day MA $232.98; move slice to cash
+2026-01-22,2026-01-22,backtest,BUY,NVDA,47,184.84,8.69,8687.48,close $184.84 above 50-day MA $184.05; buy to equal weight 9.09%
+2026-01-22,2026-01-22,backtest,BUY,AMZN,37,234.34,8.67,8670.58,close $234.34 above 50-day MA $232.55; buy to equal weight 9.09%
+2026-01-22,2026-01-22,backtest,BUY,META,13,647.63,8.42,8419.19,close $647.63 above 50-day MA $639.12; buy to equal weight 9.09%
+2026-01-22,2026-01-22,backtest,BUY,TSLA,19,449.36,8.54,8537.84,close $449.36 above 50-day MA $442.32; buy to equal weight 9.09%
+2026-01-26,2026-01-26,backtest,SELL,TSLA,19,435.2,8.27,8268.8,close $435.20 fell below 50-day MA $442.31; move slice to cash
+2026-01-27,2026-01-27,backtest,BUY,MSFT,18,480.58,8.65,8650.44,close $480.58 above 50-day MA $479.63; buy to equal weight 9.09%
+2026-01-29,2026-01-29,backtest,SELL,MSFT,18,433.5,7.8,7803.0,close $433.50 fell below 50-day MA $477.66; move slice to cash
+2026-02-02,2026-02-02,backtest,SELL,GOOGL,3,343.69,1.03,1031.07,monthly rebalance back to target weight 9.09%
+2026-02-02,2026-02-02,backtest,SELL,AMD,4,246.27,0.99,985.08,monthly rebalance back to target weight 9.09%
+2026-02-02,2026-02-02,backtest,SELL,META,1,706.41,0.71,706.41,monthly rebalance back to target weight 9.09%
+2026-02-02,2026-02-02,backtest,BUY,AAPL,32,270.01,8.64,8640.32,close $270.01 above 50-day MA $268.35; buy to equal weight 9.09%
+2026-02-03,2026-02-03,backtest,SELL,NVDA,47,180.34,8.48,8475.98,close $180.34 fell below 50-day MA $183.78; move slice to cash
+2026-02-03,2026-02-03,backtest,BUY,JPM,27,314.85,8.5,8500.95,close $314.85 above 50-day MA $313.70; buy to equal weight 9.09%
+2026-02-04,2026-02-04,backtest,SELL,AMZN,37,232.99,8.62,8620.63,close $232.99 fell below 50-day MA $233.58; move slice to cash
+2026-02-04,2026-02-04,backtest,SELL,AMD,35,200.19,7.01,7006.65,close $200.19 fell below 50-day MA $221.83; move slice to cash
+2026-02-04,2026-02-04,backtest,BUY,BRK-B,17,503.83,8.57,8565.11,close $503.83 above 50-day MA $496.62; buy to equal weight 9.09%
+2026-02-05,2026-02-05,backtest,SELL,JPM,27,310.16,8.37,8374.32,close $310.16 fell below 50-day MA $314.32; move slice to cash
+2026-02-06,2026-02-06,backtest,BUY,NVDA,46,185.41,8.53,8528.86,close $185.41 above 50-day MA $183.57; buy to equal weight 9.09%
+2026-02-06,2026-02-06,backtest,BUY,JPM,26,322.4,8.38,8382.4,close $322.40 above 50-day MA $314.80; buy to equal weight 9.09%
+2026-02-10,2026-02-10,backtest,SELL,GOOGL,25,318.58,7.96,7964.5,close $318.58 fell below 50-day MA $321.72; move slice to cash
+2026-02-11,2026-02-11,backtest,SELL,JPM,26,310.82,8.08,8081.32,close $310.82 fell below 50-day MA $315.35; move slice to cash
+2026-02-12,2026-02-12,backtest,SELL,META,12,649.81,7.8,7797.72,close $649.81 fell below 50-day MA $658.33; move slice to cash
+2026-02-12,2026-02-12,backtest,SELL,AAPL,32,261.73,8.38,8375.36,close $261.73 fell below 50-day MA $268.08; move slice to cash
+2026-02-13,2026-02-13,backtest,SELL,NVDA,46,182.81,8.41,8409.26,close $182.81 fell below 50-day MA $184.41; move slice to cash
+2026-02-17,2026-02-17,backtest,BUY,NVDA,45,184.97,8.32,8323.65,close $184.97 above 50-day MA $184.51; buy to equal weight 9.09%
+2026-02-23,2026-02-23,backtest,SELL,BRK-B,17,494.09,8.4,8399.53,close $494.09 fell below 50-day MA $495.40; move slice to cash
+2026-02-23,2026-02-23,backtest,BUY,AAPL,31,266.18,8.25,8251.58,close $266.18 above 50-day MA $265.89; buy to equal weight 9.09%
+2026-02-26,2026-02-26,backtest,SELL,NVDA,45,184.89,8.32,8320.05,close $184.89 fell below 50-day MA $185.60; move slice to cash
+2026-02-26,2026-02-26,backtest,BUY,META,12,657.01,7.88,7884.12,close $657.01 above 50-day MA $656.68; buy to equal weight 9.09%
+2026-02-26,2026-02-26,backtest,BUY,BRK-B,16,502.67,8.04,8042.72,close $502.67 above 50-day MA $495.51; buy to equal weight 9.09%
+2026-02-27,2026-02-27,backtest,SELL,META,12,648.18,7.78,7778.16,close $648.18 fell below 50-day MA $656.70; move slice to cash
+2026-02-27,2026-02-27,backtest,SELL,AAPL,31,264.18,8.19,8189.58,close $264.18 fell below 50-day MA $265.38; move slice to cash
+2026-03-02,2026-03-02,backtest,SELL,BRK-B,16,480.17,7.68,7682.72,close $480.17 fell below 50-day MA $495.09; move slice to cash
+2026-03-04,2026-03-04,backtest,BUY,META,12,667.73,8.01,8012.76,close $667.73 above 50-day MA $656.80; buy to equal weight 9.09%
+2026-03-05,2026-03-05,backtest,BUY,BRK-B,16,500.4,8.01,8006.4,close $500.40 above 50-day MA $494.43; buy to equal weight 9.09%
+2026-03-06,2026-03-06,backtest,SELL,META,12,644.86,7.74,7738.32,close $644.86 fell below 50-day MA $656.51; move slice to cash
+2026-03-09,2026-03-09,backtest,BUY,AVGO,24,345.75,8.3,8298.0,close $345.75 above 50-day MA $334.25; buy to equal weight 9.09%
+2026-03-10,2026-03-10,backtest,SELL,BRK-B,16,494.14,7.91,7906.24,close $494.14 fell below 50-day MA $494.20; move slice to cash
+2026-03-11,2026-03-11,backtest,BUY,NVDA,44,186.03,8.19,8185.32,close $186.03 above 50-day MA $185.71; buy to equal weight 9.09%
+2026-03-12,2026-03-12,backtest,SELL,NVDA,44,183.14,8.06,8058.16,close $183.14 fell below 50-day MA $185.61; move slice to cash
+2026-03-13,2026-03-13,backtest,SELL,AVGO,24,322.16,7.73,7731.84,close $322.16 fell below 50-day MA $333.06; move slice to cash
+2026-03-25,2026-03-25,backtest,BUY,AMD,37,220.27,8.15,8149.99,close $220.27 above 50-day MA $214.70; buy to equal weight 9.09%
+2026-03-26,2026-03-26,backtest,SELL,AMD,37,203.77,7.54,7539.49,close $203.77 fell below 50-day MA $214.35; move slice to cash
+2026-04-02,2026-04-02,backtest,BUY,AMD,37,217.5,8.05,8047.5,close $217.50 above 50-day MA $211.64; buy to equal weight 9.09%
+2026-04-07,2026-04-07,backtest,BUY,AVGO,24,333.97,8.02,8015.28,close $333.97 above 50-day MA $324.89; buy to equal weight 9.09%
+2026-04-08,2026-04-08,backtest,BUY,GOOGL,26,317.32,8.25,8250.32,close $317.32 above 50-day MA $309.04; buy to equal weight 9.09%
+2026-04-08,2026-04-08,backtest,BUY,AMZN,37,221.25,8.19,8186.25,close $221.25 above 50-day MA $213.72; buy to equal weight 9.09%
+2026-04-08,2026-04-08,backtest,BUY,JPM,26,307.97,8.01,8007.22,close $307.97 above 50-day MA $299.02; buy to equal weight 9.09%
+2026-04-09,2026-04-09,backtest,BUY,NVDA,45,183.91,8.28,8275.95,close $183.91 above 50-day MA $182.14; buy to equal weight 9.09%
+2026-04-13,2026-04-13,backtest,BUY,META,13,634.53,8.25,8248.89,close $634.53 above 50-day MA $631.53; buy to equal weight 9.09%
+2026-04-14,2026-04-14,backtest,BUY,MSFT,22,393.11,8.65,8648.42,close $393.11 above 50-day MA $392.16; buy to equal weight 9.09%
+2026-04-15,2026-04-15,backtest,BUY,TSLA,22,391.95,8.62,8622.9,close $391.95 above 50-day MA $391.10; buy to equal weight 9.09%
+2026-04-15,2026-04-15,backtest,BUY,AAPL,32,266.43,8.53,8525.76,close $266.43 above 50-day MA $260.81; buy to equal weight 9.09%
+2026-04-16,2026-04-16,backtest,SELL,TSLA,22,388.9,8.56,8555.8,close $388.90 fell below 50-day MA $390.44; move slice to cash
+2026-04-17,2026-04-17,backtest,BUY,TSLA,22,400.62,8.81,8813.64,close $400.62 above 50-day MA $390.33; buy to equal weight 9.09%
+2026-04-21,2026-04-21,backtest,SELL,TSLA,22,386.42,8.5,8501.24,close $386.42 fell below 50-day MA $389.74; move slice to cash
+2026-04-30,2026-04-30,backtest,SELL,META,13,611.91,7.95,7954.83,close $611.91 fell below 50-day MA $631.04; move slice to cash
+2026-05-01,2026-05-01,backtest,SELL,GOOGL,2,385.69,0.77,771.38,monthly rebalance back to target weight 9.09%
+2026-05-01,2026-05-01,backtest,SELL,AMZN,3,268.26,0.8,804.78,monthly rebalance back to target weight 9.09%
+2026-05-01,2026-05-01,backtest,SELL,AMD,12,360.54,4.33,4326.48,monthly rebalance back to target weight 9.09%
+2026-05-01,2026-05-01,backtest,SELL,AVGO,2,421.28,0.84,842.56,monthly rebalance back to target weight 9.09%
+2026-05-01,2026-05-01,backtest,BUY,TSLA,23,390.82,8.99,8988.86,close $390.82 above 50-day MA $383.71; buy to equal weight 9.09%
+2026-05-01,2026-05-01,backtest,BUY,JPM,3,312.47,0.94,937.41,monthly rebalance back to target weight 9.09%
+2026-05-11,2026-05-11,backtest,SELL,JPM,29,300.0,8.7,8700.0,close $300.00 fell below 50-day MA $300.03; move slice to cash
+2026-05-11,2026-05-11,backtest,BUY,BRK-B,20,479.55,9.59,9591.0,close $479.55 above 50-day MA $479.40; buy to equal weight 9.09%
+2026-05-12,2026-05-12,backtest,BUY,JPM,31,304.88,9.45,9451.28,close $304.88 above 50-day MA $300.18; buy to equal weight 9.09%
+2026-05-14,2026-05-14,backtest,SELL,JPM,31,299.91,9.3,9297.21,close $299.91 fell below 50-day MA $300.19; move slice to cash
+2026-05-18,2026-05-18,backtest,BUY,JPM,31,300.73,9.32,9322.63,close $300.73 above 50-day MA $300.50; buy to equal weight 9.09%
+2026-05-19,2026-05-19,backtest,SELL,JPM,31,295.7,9.17,9166.7,close $295.70 fell below 50-day MA $300.61; move slice to cash
+2026-05-20,2026-05-20,backtest,BUY,JPM,31,301.98,9.36,9361.38,close $301.98 above 50-day MA $300.88; buy to equal weight 9.09%
+2026-05-27,2026-05-27,backtest,SELL,JPM,31,299.28,9.28,9277.68,close $299.28 fell below 50-day MA $302.39; move slice to cash
+2026-05-27,2026-05-27,backtest,BUY,META,15,635.26,9.53,9528.9,close $635.26 above 50-day MA $617.94; buy to equal weight 9.09%
+2026-05-29,2026-05-29,backtest,SELL,BRK-B,20,474.48,9.49,9489.6,close $474.48 fell below 50-day MA $477.08; move slice to cash
+2026-06-01,2026-06-01,backtest,SELL,AMD,6,510.13,3.06,3060.78,monthly rebalance back to target weight 9.09%
+2026-06-01,2026-06-01,backtest,SELL,META,15,600.47,9.01,9007.05,close $600.47 fell below 50-day MA $618.41; move slice to cash
+2026-06-01,2026-06-01,backtest,BUY,GOOGL,2,376.37,0.75,752.74,monthly rebalance back to target weight 9.09%
+2026-06-01,2026-06-01,backtest,BUY,AMZN,3,261.26,0.78,783.78,monthly rebalance back to target weight 9.09%
+2026-06-03,2026-06-03,backtest,BUY,META,15,622.98,9.34,9344.7,close $622.98 above 50-day MA $618.87; buy to equal weight 9.09%
+2026-06-04,2026-06-04,backtest,BUY,JPM,31,310.89,9.64,9637.59,close $310.89 above 50-day MA $303.86; buy to equal weight 9.09%
+2026-06-04,2026-06-04,backtest,BUY,BRK-B,20,478.63,9.57,9572.6,close $478.63 above 50-day MA $476.57; buy to equal weight 9.09%
+2026-06-05,2026-06-05,backtest,SELL,AMZN,37,246.03,9.1,9103.11,close $246.03 fell below 50-day MA $251.16; move slice to cash
+2026-06-05,2026-06-05,backtest,SELL,META,15,593.0,8.89,8895.0,close $593.00 fell below 50-day MA $619.52; move slice to cash
+2026-06-05,2026-06-05,backtest,SELL,TSLA,23,391.0,8.99,8993.0,close $391.00 fell below 50-day MA $395.29; move slice to cash
+2026-06-05,2026-06-05,backtest,SELL,AVGO,22,385.73,8.49,8486.06,close $385.73 fell below 50-day MA $398.41; move slice to cash
+2026-06-08,2026-06-08,backtest,BUY,TSLA,22,408.95,9.0,8996.9,close $408.95 above 50-day MA $396.03; buy to equal weight 9.09%
+2026-06-09,2026-06-09,backtest,SELL,TSLA,22,396.68,8.73,8726.96,close $396.68 fell below 50-day MA $396.72; move slice to cash
+2026-06-09,2026-06-09,backtest,SELL,MSFT,22,403.41,8.88,8875.02,close $403.41 fell below 50-day MA $410.20; move slice to cash
+2026-06-10,2026-06-10,backtest,SELL,NVDA,45,200.42,9.02,9018.9,close $200.42 fell below 50-day MA $205.71; move slice to cash
+2026-06-10,2026-06-10,backtest,SELL,GOOGL,26,356.38,9.27,9265.88,close $356.38 fell below 50-day MA $359.61; move slice to cash
+2026-06-11,2026-06-11,backtest,BUY,TSLA,23,399.15,9.18,9180.45,close $399.15 above 50-day MA $397.80; buy to equal weight 9.09%
+2026-06-15,2026-06-15,backtest,BUY,NVDA,44,212.45,9.35,9347.8,close $212.45 above 50-day MA $207.61; buy to equal weight 9.09%
+2026-06-15,2026-06-15,backtest,BUY,GOOGL,25,369.35,9.23,9233.75,close $369.35 above 50-day MA $363.73; buy to equal weight 9.09%
+2026-06-16,2026-06-16,backtest,SELL,NVDA,44,207.41,9.13,9126.04,close $207.41 fell below 50-day MA $208.21; move slice to cash
+2026-06-17,2026-06-17,backtest,SELL,GOOGL,25,363.79,9.09,9094.75,close $363.79 fell below 50-day MA $366.36; move slice to cash
+2026-06-17,2026-06-17,backtest,SELL,TSLA,23,396.38,9.12,9116.74,close $396.38 fell below 50-day MA $401.34; move slice to cash
+2026-06-18,2026-06-18,backtest,BUY,NVDA,44,210.69,9.27,9270.36,close $210.69 above 50-day MA $209.31; buy to equal weight 9.09%
+2026-06-18,2026-06-18,backtest,BUY,GOOGL,25,368.03,9.2,9200.75,close $368.03 above 50-day MA $367.37; buy to equal weight 9.09%
+2026-06-22,2026-06-22,backtest,SELL,NVDA,44,208.65,9.18,9180.6,close $208.65 fell below 50-day MA $209.81; move slice to cash
+2026-06-22,2026-06-22,backtest,SELL,GOOGL,25,349.68,8.74,8742.0,close $349.68 fell below 50-day MA $368.00; move slice to cash
+2026-06-22,2026-06-22,backtest,BUY,TSLA,22,405.05,8.91,8911.1,close $405.05 above 50-day MA $403.68; buy to equal weight 9.09%
+2026-06-23,2026-06-23,backtest,SELL,TSLA,22,381.61,8.4,8395.42,close $381.61 fell below 50-day MA $404.33; move slice to cash
+2026-06-25,2026-06-25,backtest,SELL,AAPL,32,275.15,8.8,8804.8,close $275.15 fell below 50-day MA $291.15; move slice to cash
+2026-06-29,2026-06-29,backtest,BUY,TSLA,22,411.84,9.06,9060.48,close $411.84 above 50-day MA $405.22; buy to equal weight 9.09%
+2026-07-01,2026-07-01,backtest,SELL,AMD,2,540.88,1.08,1081.76,monthly rebalance back to target weight 9.09%
+2026-07-01,2026-07-01,backtest,SELL,JPM,4,334.07,1.34,1336.28,monthly rebalance back to target weight 9.09%
+2026-07-01,2026-07-01,backtest,SELL,BRK-B,2,499.74,1.0,999.48,monthly rebalance back to target weight 9.09%
+2026-07-01,2026-07-01,backtest,BUY,META,15,612.91,9.19,9193.65,close $612.91 above 50-day MA $606.95; buy to equal weight 9.09%
+2026-07-01,2026-07-01,backtest,BUY,AAPL,31,294.38,9.13,9125.78,close $294.38 above 50-day MA $292.67; buy to equal weight 9.09%
+2026-07-02,2026-07-02,backtest,SELL,META,15,582.9,8.74,8743.5,close $582.90 fell below 50-day MA $605.23; move slice to cash
+2026-07-02,2026-07-02,backtest,SELL,TSLA,22,393.45,8.66,8655.9,close $393.45 fell below 50-day MA $406.42; move slice to cash
+2026-07-06,2026-07-06,backtest,BUY,TSLA,21,419.77,8.82,8815.17,close $419.77 above 50-day MA $407.07; buy to equal weight 9.09%
+2026-07-07,2026-07-07,backtest,SELL,TSLA,21,402.9,8.46,8460.9,close $402.90 fell below 50-day MA $407.65; move slice to cash
+2026-07-07,2026-07-07,backtest,BUY,META,14,615.58,8.62,8618.12,close $615.58 above 50-day MA $602.87; buy to equal weight 9.09%
+2026-07-10,2026-07-10,backtest,BUY,NVDA,43,210.96,9.07,9071.28,close $210.96 above 50-day MA $209.20; buy to equal weight 9.09%
+2026-07-13,2026-07-13,backtest,SELL,NVDA,43,203.53,8.75,8751.79,close $203.53 fell below 50-day MA $209.08; move slice to cash
+2026-07-14,2026-07-14,backtest,BUY,NVDA,43,211.8,9.11,9107.4,close $211.80 above 50-day MA $209.33; buy to equal weight 9.09%
+2026-07-15,2026-07-15,backtest,BUY,AMZN,36,254.96,9.18,9178.56,close $254.96 above 50-day MA $253.10; buy to equal weight 9.09%
+2026-07-16,2026-07-16,backtest,SELL,NVDA,43,207.4,8.92,8918.2,close $207.40 fell below 50-day MA $209.79; move slice to cash
+2026-07-16,2026-07-16,backtest,SELL,AMZN,36,249.89,9.0,8996.04,close $249.89 fell below 50-day MA $252.66; move slice to cash
+2026-07-17,2026-07-17,backtest,SELL,AMD,17,495.76,8.43,8427.92,close $495.76 fell below 50-day MA $499.08; move slice to cash
+2026-07-20,2026-07-20,backtest,BUY,AMD,17,503.57,8.56,8560.69,close $503.57 above 50-day MA $500.73; buy to equal weight 9.09%
+2026-07-20,2026-07-20,backtest,BUY,MSFT,22,402.29,8.85,8850.38,close $402.29 above 50-day MA $401.28; buy to equal weight 9.09%
+2026-07-21,2026-07-21,backtest,SELL,MSFT,22,397.75,8.75,8750.5,close $397.75 fell below 50-day MA $400.82; move slice to cash
+2026-07-22,2026-07-22,backtest,BUY,NVDA,42,212.06,8.91,8906.52,close $212.06 above 50-day MA $209.68; buy to equal weight 9.09%
+2026-07-23,2026-07-23,backtest,SELL,NVDA,42,208.76,8.77,8767.92,close $208.76 fell below 50-day MA $209.46; move slice to cash
+2026-07-23,2026-07-23,backtest,SELL,META,14,606.1,8.49,8485.4,close $606.10 fell below 50-day MA $606.23; move slice to cash
+2026-07-27,2026-07-27,backtest,SELL,AMD,17,494.95,8.41,8414.15,close $494.95 fell below 50-day MA $509.47; move slice to cash
+2026-07-30,2026-07-30,backtest,BUY,MSFT,20,451.1,9.02,9022.0,close $451.10 above 50-day MA $398.46; buy to equal weight 9.09%
+2026-07-31,2026-07-31,backtest,SELL,AAPL,31,308.91,9.58,9576.21,close $308.91 fell below 50-day MA $309.50; move slice to cash
+2026-07-31,2026-07-31,backtest,BUY,AMZN,33,271.58,8.96,8962.14,close $271.58 above 50-day MA $246.63; buy to equal weight 9.09%
+2026-08-03,2026-08-03,backtest,SELL,AMZN,2,284.02,0.57,568.04,monthly rebalance back to target weight 9.09%
+2026-08-03,2026-08-03,backtest,SELL,MSFT,2,487.65,0.98,975.3,monthly rebalance back to target weight 9.09%
+2026-08-03,2026-08-03,backtest,SELL,JPM,2,352.64,0.71,705.28,monthly rebalance back to target weight 9.09%
+2026-08-03,2026-08-03,backtest,SELL,BRK-B,1,513.14,0.51,513.14,monthly rebalance back to target weight 9.09%
+2026-08-03,2026-08-03,backtest,BUY,NVDA,43,206.64,8.89,8885.52,close $206.64 above 50-day MA $205.84; buy to equal weight 9.09%
+2026-08-03,2026-08-03,backtest,BUY,GOOGL,24,373.51,8.96,8964.24,close $373.51 above 50-day MA $358.43; buy to equal weight 9.09%
+2026-08-04,2026-08-04,backtest,BUY,AMD,17,518.58,8.82,8815.86,close $518.58 above 50-day MA $514.33; buy to equal weight 9.09%
+2026-08-04,2026-08-04,backtest,BUY,AVGO,21,418.16,8.78,8781.36,close $418.16 above 50-day MA $394.87; buy to equal weight 9.09%
+2026-08-05,2026-08-05,backtest,SELL,AMD,17,482.05,8.19,8194.85,close $482.05 fell below 50-day MA $514.62; move slice to cash
+2026-08-05,2026-08-05,backtest,BUY,AAPL,29,311.0,9.02,9019.0,close $311.00 above 50-day MA $309.65; buy to equal weight 9.09%
+2026-08-07,2026-08-07,backtest,SELL,GOOGL,24,354.3,8.5,8503.2,close $354.30 fell below 50-day MA $356.51; move slice to cash
+2026-08-10,2026-08-10,backtest,SELL,AAPL,29,308.26,8.94,8939.54,close $308.26 fell below 50-day MA $309.70; move slice to cash
+2026-08-10,2026-08-10,backtest,BUY,GOOGL,25,357.52,8.94,8938.0,close $357.52 above 50-day MA $355.85; buy to equal weight 9.09%
+2026-08-11,2026-08-11,backtest,SELL,GOOGL,25,343.8,8.6,8595.0,close $343.80 fell below 50-day MA $355.12; move slice to cash
+2026-08-11,2026-08-11,backtest,BUY,META,15,599.12,8.99,8986.8,close $599.12 above 50-day MA $598.28; buy to equal weight 9.09%
+2026-08-12,2026-08-12,backtest,SELL,META,15,578.85,8.68,8682.75,close $578.85 fell below 50-day MA $597.85; move slice to cash
+2026-08-14,2026-08-14,backtest,BUY,AMD,17,514.39,8.74,8744.63,close $514.39 above 50-day MA $510.40; buy to equal weight 9.09%
+2026-08-17,2026-08-17,backtest,SELL,AMD,17,506.0,8.6,8602.0,close $506.00 fell below 50-day MA $510.06; move slice to cash
+2026-08-17,2026-08-17,backtest,SELL,BRK-B,17,498.23,8.47,8469.91,close $498.23 fell below 50-day MA $499.42; move slice to cash
+2026-08-18,2026-08-18,backtest,SELL,AVGO,21,380.0,7.98,7980.0,close $380.00 fell below 50-day MA $389.82; move slice to cash
+2026-08-18,2026-08-18,backtest,BUY,AAPL,28,310.03,8.68,8680.84,close $310.03 above 50-day MA $309.13; buy to equal weight 9.09%
+2026-08-18,2026-08-18,backtest,BUY,BRK-B,17,502.96,8.55,8550.32,close $502.96 above 50-day MA $499.72; buy to equal weight 9.09%
+2026-08-19,2026-08-19,backtest,SELL,BRK-B,17,499.62,8.49,8493.54,close $499.62 fell below 50-day MA $499.97; move slice to cash
+2026-08-21,2026-08-21,backtest,SELL,AAPL,28,309.35,8.66,8661.8,close $309.35 fell below 50-day MA $310.21; move slice to cash
+2026-08-24,2026-08-24,backtest,BUY,BRK-B,17,504.32,8.57,8573.44,close $504.32 above 50-day MA $500.76; buy to equal weight 9.09%
+2026-08-26,2026-08-26,backtest,BUY,AAPL,27,313.45,8.46,8463.15,close $313.45 above 50-day MA $311.22; buy to equal weight 9.09%
+2026-08-31,2026-08-31,backtest,BUY,TSLA,23,367.95,8.46,8462.85,close $367.95 above 50-day MA $359.82; buy to equal weight 9.09%
+2026-09-01,2026-09-01,backtest,SELL,NVDA,3,217.44,0.65,652.32,monthly rebalance back to target weight 9.09%
+2026-09-01,2026-09-01,backtest,SELL,TSLA,23,356.09,8.19,8190.07,close $356.09 fell below 50-day MA $358.84; move slice to cash
+2026-09-01,2026-09-01,backtest,SELL,MSFT,1,501.02,0.5,501.02,monthly rebalance back to target weight 9.09%
+2026-09-01,2026-09-01,backtest,BUY,AMZN,3,254.92,0.76,764.76,monthly rebalance back to target weight 9.09%
+2026-09-03,2026-09-03,backtest,BUY,META,14,610.68,8.55,8549.52,close $610.68 above 50-day MA $594.01; buy to equal weight 9.09%
+2026-09-03,2026-09-03,backtest,BUY,TSLA,23,376.37,8.66,8656.51,close $376.37 above 50-day MA $358.37; buy to equal weight 9.09%
+2026-09-04,2026-09-04,backtest,SELL,TSLA,23,354.08,8.14,8143.84,close $354.08 fell below 50-day MA $357.95; move slice to cash
+2026-09-08,2026-09-08,backtest,BUY,AMD,17,505.74,8.6,8597.58,close $505.74 above 50-day MA $498.96; buy to equal weight 9.09%
+2026-09-08,2026-09-08,backtest,BUY,TSLA,23,368.16,8.47,8467.68,close $368.16 above 50-day MA $357.72; buy to equal weight 9.09%
+2026-09-09,2026-09-09,backtest,SELL,AMZN,34,252.4,8.58,8581.6,close $252.40 fell below 50-day MA $254.68; move slice to cash
+2026-09-09,2026-09-09,backtest,SELL,AAPL,27,315.34,8.51,8514.18,close $315.34 fell below 50-day MA $316.47; move slice to cash
+2026-09-10,2026-09-10,backtest,BUY,AAPL,26,326.57,8.49,8490.82,close $326.57 above 50-day MA $317.22; buy to equal weight 9.09%
+2026-09-11,2026-09-11,backtest,BUY,AMZN,34,256.78,8.73,8730.52,close $256.78 above 50-day MA $255.25; buy to equal weight 9.09%
+2026-09-14,2026-09-14,backtest,SELL,NVDA,40,210.96,8.44,8438.4,close $210.96 fell below 50-day MA $212.91; move slice to cash
+2026-09-14,2026-09-14,backtest,SELL,AMZN,34,253.54,8.62,8620.36,close $253.54 fell below 50-day MA $255.47; move slice to cash
+2026-09-14,2026-09-14,backtest,SELL,AMD,17,493.41,8.39,8387.97,close $493.41 fell below 50-day MA $496.06; move slice to cash
+2026-09-14,2026-09-14,backtest,SELL,JPM,25,350.13,8.75,8753.25,close $350.13 fell below 50-day MA $352.05; move slice to cash
+2026-09-14,2026-09-14,backtest,BUY,GOOGL,24,349.39,8.39,8385.36,close $349.39 above 50-day MA $346.97; buy to equal weight 9.09%
+2026-09-15,2026-09-15,backtest,SELL,GOOGL,24,344.98,8.28,8279.52,close $344.98 fell below 50-day MA $346.54; move slice to cash
+2026-09-15,2026-09-15,backtest,BUY,AMD,17,504.2,8.57,8571.4,close $504.20 above 50-day MA $495.10; buy to equal weight 9.09%
+2026-09-15,2026-09-15,backtest,BUY,JPM,24,352.49,8.46,8459.76,close $352.49 above 50-day MA $352.35; buy to equal weight 9.09%
+2026-09-16,2026-09-16,backtest,SELL,JPM,24,348.92,8.37,8374.08,close $348.92 fell below 50-day MA $352.54; move slice to cash
+2026-09-16,2026-09-16,backtest,BUY,NVDA,40,213.9,8.56,8556.0,close $213.90 above 50-day MA $213.58; buy to equal weight 9.09%
+2026-09-17,2026-09-17,backtest,BUY,GOOGL,25,347.33,8.68,8683.25,close $347.33 above 50-day MA $345.76; buy to equal weight 9.09%
+2026-09-21,2026-09-21,backtest,SELL,BRK-B,17,502.01,8.53,8534.17,close $502.01 fell below 50-day MA $505.25; move slice to cash
+2026-09-21,2026-09-21,backtest,BUY,AMZN,35,258.45,9.05,9045.75,close $258.45 above 50-day MA $256.10; buy to equal weight 9.09%
+2026-09-22,2026-09-22,backtest,SELL,AMZN,35,254.98,8.92,8924.3,close $254.98 fell below 50-day MA $256.26; move slice to cash
+2026-09-23,2026-09-23,backtest,SELL,GOOGL,25,337.83,8.45,8445.75,close $337.83 fell below 50-day MA $345.07; move slice to cash
+2026-09-23,2026-09-23,backtest,BUY,BRK-B,17,507.17,8.62,8621.89,close $507.17 above 50-day MA $505.71; buy to equal weight 9.09%
+2026-09-24,2026-09-24,backtest,SELL,BRK-B,17,505.18,8.59,8588.06,close $505.18 fell below 50-day MA $506.04; move slice to cash
+2026-09-30,2026-09-30,backtest,BUY,GOOGL,25,344.08,8.6,8602.0,close $344.08 above 50-day MA $343.93; buy to equal weight 9.09%
+2026-10-01,2026-10-01,backtest,SELL,NVDA,2,230.86,0.46,461.72,monthly rebalance back to target weight 9.09%
+2026-10-01,2026-10-01,backtest,SELL,GOOGL,25,338.24,8.46,8456.0,close $338.24 fell below 50-day MA $343.85; move slice to cash
+2026-10-01,2026-10-01,backtest,SELL,AMD,3,615.73,1.85,1847.19,monthly rebalance back to target weight 9.09%
+2026-10-01,2026-10-01,backtest,SELL,META,2,725.93,1.45,1451.86,monthly rebalance back to target weight 9.09%
+2026-10-01,2026-10-01,backtest,BUY,TSLA,2,354.11,0.71,708.22,monthly rebalance back to target weight 9.09%
+2026-10-05,2026-10-05,backtest,BUY,GOOGL,26,346.47,9.01,9008.22,close $346.47 above 50-day MA $344.90; buy to equal weight 9.09%
+2026-10-06,2026-10-06,backtest,BUY,AVGO,24,375.81,9.02,9019.44,close $375.81 above 50-day MA $372.69; buy to equal weight 9.09%
+2026-10-07,2026-10-07,backtest,BUY,AMZN,34,259.92,8.84,8837.28,close $259.92 above 50-day MA $258.01; buy to equal weight 9.09%
+2026-10-08,2026-10-08,backtest,SELL,AMZN,34,254.06,8.64,8638.04,close $254.06 fell below 50-day MA $258.56; move slice to cash
+2026-10-08,2026-10-08,backtest,SELL,AVGO,24,360.14,8.64,8643.36,close $360.14 fell below 50-day MA $372.39; move slice to cash
+2026-10-08,2026-10-08,backtest,BUY,BRK-B,17,511.05,8.69,8687.85,close $511.05 above 50-day MA $507.65; buy to equal weight 9.09%
+2026-10-09,2026-10-09,backtest,BUY,AMZN,34,262.43,8.92,8922.62,close $262.43 above 50-day MA $259.10; buy to equal weight 9.09%
+2026-10-14,2026-10-14,backtest,SELL,NVDA,38,221.3,8.41,8409.4,close $221.30 fell below 50-day MA $223.21; move slice to cash
+2026-10-14,2026-10-14,backtest,SELL,AMZN,34,254.08,8.64,8638.72,close $254.08 fell below 50-day MA $257.88; move slice to cash
+2026-10-16,2026-10-16,backtest,SELL,GOOGL,26,340.59,8.86,8855.34,close $340.59 fell below 50-day MA $344.58; move slice to cash
+2026-10-16,2026-10-16,backtest,SELL,AMD,14,528.75,7.4,7402.5,close $528.75 fell below 50-day MA $537.14; move slice to cash
+2026-10-16,2026-10-16,backtest,SELL,TSLA,25,354.72,8.87,8868.0,close $354.72 fell below 50-day MA $359.46; move slice to cash
+2026-10-19,2026-10-19,backtest,BUY,AMZN,33,262.45,8.66,8660.85,close $262.45 above 50-day MA $256.84; buy to equal weight 9.09%
+2026-10-19,2026-10-19,backtest,BUY,TSLA,23,368.06,8.47,8465.38,close $368.06 above 50-day MA $360.25; buy to equal weight 9.09%
+2026-10-21,2026-10-21,backtest,BUY,AMD,15,552.72,8.29,8290.8,close $552.72 above 50-day MA $541.10; buy to equal weight 9.09%
+2026-10-22,2026-10-22,backtest,SELL,AMZN,33,250.38,8.26,8262.54,close $250.38 fell below 50-day MA $255.99; move slice to cash
+2026-10-22,2026-10-22,backtest,SELL,AMD,15,507.93,7.62,7618.95,close $507.93 fell below 50-day MA $541.60; move slice to cash
+2026-10-22,2026-10-22,backtest,SELL,META,12,648.85,7.79,7786.2,close $648.85 fell below 50-day MA $662.86; move slice to cash
+2026-10-27,2026-10-27,backtest,BUY,AMD,15,560.26,8.4,8403.9,close $560.26 above 50-day MA $543.70; buy to equal weight 9.09%
+2026-10-29,2026-10-29,backtest,BUY,JPM,25,343.58,8.59,8589.5,close $343.58 above 50-day MA $343.58; buy to equal weight 9.09%
+2026-10-30,2026-10-30,backtest,SELL,AMD,15,504.8,7.57,7572.0,close $504.80 fell below 50-day MA $548.29; move slice to cash
+2026-10-30,2026-10-30,backtest,SELL,JPM,25,337.04,8.43,8426.0,close $337.04 fell below 50-day MA $343.29; move slice to cash
+2026-11-02,2026-11-02,backtest,SELL,TSLA,2,403.82,0.81,807.64,monthly rebalance back to target weight 9.09%
+2026-11-02,2026-11-02,backtest,SELL,MSFT,17,507.12,8.62,8621.04,close $507.12 fell below 50-day MA $513.39; move slice to cash
+2026-11-02,2026-11-02,backtest,SELL,BRK-B,2,556.11,1.11,1112.22,monthly rebalance back to target weight 9.09%
+2026-11-03,2026-11-03,backtest,SELL,AAPL,26,331.9,8.63,8629.4,close $331.90 fell below 50-day MA $334.05; move slice to cash
+2026-11-03,2026-11-03,backtest,BUY,MSFT,16,520.99,8.34,8335.84,close $520.99 above 50-day MA $514.06; buy to equal weight 9.09%
+2026-11-04,2026-11-04,backtest,BUY,AMZN,32,266.03,8.51,8512.96,close $266.03 above 50-day MA $253.89; buy to equal weight 9.09%
+2026-11-04,2026-11-04,backtest,BUY,AAPL,24,349.51,8.39,8388.24,close $349.51 above 50-day MA $334.84; buy to equal weight 9.09%
+2026-11-04,2026-11-04,backtest,BUY,JPM,24,352.11,8.45,8450.64,close $352.11 above 50-day MA $342.61; buy to equal weight 9.09%
+2026-11-05,2026-11-05,backtest,SELL,TSLA,21,343.69,7.22,7217.49,close $343.69 fell below 50-day MA $372.07; move slice to cash
+2026-11-05,2026-11-05,backtest,SELL,JPM,24,337.34,8.1,8096.16,close $337.34 fell below 50-day MA $342.22; move slice to cash
+2026-11-09,2026-11-09,backtest,BUY,TSLA,22,378.05,8.32,8317.1,close $378.05 above 50-day MA $372.72; buy to equal weight 9.09%
+2026-11-09,2026-11-09,backtest,BUY,JPM,24,342.08,8.21,8209.92,close $342.08 above 50-day MA $341.52; buy to equal weight 9.09%
+2026-11-11,2026-11-11,backtest,BUY,AMD,15,552.9,8.29,8293.5,close $552.90 above 50-day MA $550.43; buy to equal weight 9.09%
+2026-11-12,2026-11-12,backtest,BUY,AVGO,23,364.36,8.38,8380.28,close $364.36 above 50-day MA $345.59; buy to equal weight 9.09%
+2026-11-13,2026-11-13,backtest,SELL,AMD,15,534.06,8.01,8010.9,close $534.06 fell below 50-day MA $554.55; move slice to cash
+2026-11-16,2026-11-16,backtest,SELL,MSFT,16,517.99,8.29,8287.84,close $517.99 fell below 50-day MA $519.36; move slice to cash
+2026-11-16,2026-11-16,backtest,SELL,AVGO,23,333.4,7.67,7668.2,close $333.40 fell below 50-day MA $344.89; move slice to cash
+2026-11-16,2026-11-16,backtest,SELL,JPM,24,338.21,8.12,8117.04,close $338.21 fell below 50-day MA $340.01; move slice to cash

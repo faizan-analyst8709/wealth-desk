@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.log
+state/.lock
+data/*.tmp
+cloudflared
+*.png
