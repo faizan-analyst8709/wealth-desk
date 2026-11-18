@@ -1,5 +1,5 @@
 {
- "generated_pkt": "2026-11-19 02:50:26 PKT",
+ "generated_pkt": "2026-11-19 03:50:30 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
@@ -42,18 +42,18 @@
  "live": {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "equity": 100223.81,
-  "cash": 64596.8,
-  "day_pl": -94.84,
-  "day_pl_pct": -0.09,
-  "total_pl": 223.81,
-  "total_pl_pct": 0.22,
+  "equity": 100214.96,
+  "cash": 55736.7,
+  "day_pl": -103.69,
+  "day_pl_pct": -0.1,
+  "total_pl": 214.96,
+  "total_pl_pct": 0.21,
   "spy_equity": 99594.48,
   "spy_day_pct": -0.38,
   "spy_total_pct": -0.41,
-  "vs_spy_pct": 0.63,
-  "last_trade_date": "2026-11-18",
-  "positions": 4
+  "vs_spy_pct": 0.62,
+  "last_trade_date": "2026-11-19",
+  "positions": 5
  },
  "backtest": {
   "label": "HYPOTHETICAL BACKTEST - not actual results",
@@ -1354,7 +1354,7 @@
    {
     "d": "2026-11-19",
     "md": "2026-11-18",
-    "s": 100223.81,
+    "s": 100214.96,
     "b": 99594.48
    }
   ]
@@ -1369,6 +1369,10 @@
    "value": 9370.9
   },
   {
+   "label": "AVGO",
+   "value": 8851.25
+  },
+  {
    "label": "BRK-B",
    "value": 8619.3
   },
@@ -1378,7 +1382,7 @@
   },
   {
    "label": "Cash",
-   "value": 64596.8
+   "value": 55736.7
   }
  ],
  "holdings": [
@@ -1407,6 +1411,19 @@
    "avg_cost": 258.15,
    "unrealized": 335.72,
    "total_ret_pct": 3.72
+  },
+  {
+   "symbol": "AVGO",
+   "shares": 25,
+   "price": 354.05,
+   "chg": 12.45,
+   "chg_pct": 3.64,
+   "value": 8851.25,
+   "weight_pct": 8.83,
+   "cost_basis": 8860.1,
+   "avg_cost": 354.4,
+   "unrealized": -8.85,
+   "total_ret_pct": -0.1
   },
   {
    "symbol": "BRK-B",
@@ -1865,8 +1882,33 @@
    "vol": 12.24
   }
  ],
- "trades_today": [],
+ "trades_today": [
+  {
+   "timestamp_pkt": "2026-11-19 03:50 PKT",
+   "date": "2026-11-19",
+   "phase": "live",
+   "side": "BUY",
+   "symbol": "AVGO",
+   "shares": "25",
+   "price": "354.05",
+   "fee": "8.85",
+   "value": "8851.25",
+   "reason": "close $354.05 above 50-day MA $344.15; buy to equal weight 9.09%"
+  }
+ ],
  "recent_trades": [
+  {
+   "timestamp_pkt": "2026-11-19 03:50 PKT",
+   "date": "2026-11-19",
+   "phase": "live",
+   "side": "BUY",
+   "symbol": "AVGO",
+   "shares": "25",
+   "price": "354.05",
+   "fee": "8.85",
+   "value": "8851.25",
+   "reason": "close $354.05 above 50-day MA $344.15; buy to equal weight 9.09%"
+  },
   {
    "timestamp_pkt": "2026-11-18 11:09 PKT",
    "date": "2026-11-18",
