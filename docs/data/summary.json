@@ -1,13 +1,13 @@
 {
- "generated_pkt": "2026-11-19 01:51:53 PKT",
+ "generated_pkt": "2026-11-19 02:50:26 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
  "data_market_date": "2026-11-18",
- "data_price_time_pkt": "2026-11-19 01:51 PKT",
- "session_open": true,
+ "data_price_time_pkt": "2026-11-19 02:00 PKT",
+ "session_open": false,
  "stale_symbols": [],
- "price_basis": "Intraday: US session is open (opened 7:30 PM PKT); prices are live/early-session, signals use the previous completed close.",
+ "price_basis": "Prices are the last completed US close (2026-11-18). US market opens 7:30 PM PKT (winter).",
  "strategy": {
   "name": "Equal-weight trend filter",
   "tickers": [
@@ -42,15 +42,15 @@
  "live": {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "equity": 100238.83,
+  "equity": 100223.81,
   "cash": 64596.8,
-  "day_pl": -79.82,
-  "day_pl_pct": -0.08,
-  "total_pl": 238.83,
-  "total_pl_pct": 0.24,
-  "spy_equity": 99610.16,
-  "spy_day_pct": -0.36,
-  "spy_total_pct": -0.39,
+  "day_pl": -94.84,
+  "day_pl_pct": -0.09,
+  "total_pl": 223.81,
+  "total_pl_pct": 0.22,
+  "spy_equity": 99594.48,
+  "spy_day_pct": -0.38,
+  "spy_total_pct": -0.41,
   "vs_spy_pct": 0.63,
   "last_trade_date": "2026-11-18",
   "positions": 4
@@ -1354,8 +1354,8 @@
    {
     "d": "2026-11-19",
     "md": "2026-11-18",
-    "s": 100238.83,
-    "b": 99610.16
+    "s": 100223.81,
+    "b": 99594.48
    }
   ]
  },
@@ -1366,15 +1366,15 @@
   },
   {
    "label": "AMZN",
-   "value": 9355.15
+   "value": 9370.9
   },
   {
    "label": "BRK-B",
-   "value": 8621.55
+   "value": 8619.3
   },
   {
    "label": "TSLA",
-   "value": 8854.08
+   "value": 8825.56
   },
   {
    "label": "Cash",
@@ -1398,105 +1398,105 @@
   {
    "symbol": "AMZN",
    "shares": 35,
-   "price": 267.29,
-   "chg": 9.4,
-   "chg_pct": 3.64,
-   "value": 9355.15,
-   "weight_pct": 9.33,
+   "price": 267.74,
+   "chg": 9.85,
+   "chg_pct": 3.82,
+   "value": 9370.9,
+   "weight_pct": 9.35,
    "cost_basis": 9035.18,
    "avg_cost": 258.15,
-   "unrealized": 319.97,
-   "total_ret_pct": 3.54
+   "unrealized": 335.72,
+   "total_ret_pct": 3.72
   },
   {
    "symbol": "BRK-B",
    "shares": 15,
-   "price": 574.77,
-   "chg": -11.99,
-   "chg_pct": -2.04,
-   "value": 8621.55,
+   "price": 574.62,
+   "chg": -12.14,
+   "chg_pct": -2.07,
+   "value": 8619.3,
    "weight_pct": 8.6,
    "cost_basis": 8810.2,
    "avg_cost": 587.35,
-   "unrealized": -188.65,
-   "total_ret_pct": -2.14
+   "unrealized": -190.9,
+   "total_ret_pct": -2.17
   },
   {
    "symbol": "TSLA",
    "shares": 23,
-   "price": 384.96,
-   "chg": 4.85,
-   "chg_pct": 1.28,
-   "value": 8854.08,
-   "weight_pct": 8.83,
+   "price": 383.72,
+   "chg": 3.61,
+   "chg_pct": 0.95,
+   "value": 8825.56,
+   "weight_pct": 8.81,
    "cost_basis": 8751.27,
    "avg_cost": 380.49,
-   "unrealized": 102.81,
-   "total_ret_pct": 1.17
+   "unrealized": 74.29,
+   "total_ret_pct": 0.85
   }
  ],
  "watchlist": [
   {
    "symbol": "NVDA",
-   "price": 150.62,
+   "price": 150.96,
    "prev_close": 155.46,
-   "chg": -4.84,
-   "chg_pct": -3.11,
-   "sma50": 211.76,
+   "chg": -4.5,
+   "chg_pct": -2.89,
+   "sma50": 210.3,
    "above_sma": false
   },
   {
    "symbol": "GOOGL",
-   "price": 282.98,
+   "price": 282.44,
    "prev_close": 280.2,
-   "chg": 2.78,
-   "chg_pct": 0.99,
-   "sma50": 325.93,
+   "chg": 2.24,
+   "chg_pct": 0.8,
+   "sma50": 324.96,
    "above_sma": false
   },
   {
    "symbol": "AMZN",
-   "price": 267.29,
+   "price": 267.74,
    "prev_close": 257.89,
-   "chg": 9.4,
-   "chg_pct": 3.64,
-   "sma50": 254.81,
+   "chg": 9.85,
+   "chg_pct": 3.82,
+   "sma50": 255.12,
    "above_sma": true
   },
   {
    "symbol": "AMD",
-   "price": 526.14,
+   "price": 530.14,
    "prev_close": 503.41,
-   "chg": 22.73,
-   "chg_pct": 4.52,
-   "sma50": 555.04,
+   "chg": 26.73,
+   "chg_pct": 5.31,
+   "sma50": 555.22,
    "above_sma": false
   },
   {
    "symbol": "META",
-   "price": 614.36,
+   "price": 616.38,
    "prev_close": 618.87,
-   "chg": -4.51,
-   "chg_pct": -0.73,
-   "sma50": 680.11,
+   "chg": -2.49,
+   "chg_pct": -0.4,
+   "sma50": 679.36,
    "above_sma": false
   },
   {
    "symbol": "TSLA",
-   "price": 384.96,
+   "price": 383.72,
    "prev_close": 380.11,
-   "chg": 4.85,
-   "chg_pct": 1.28,
-   "sma50": 375.49,
+   "chg": 3.61,
+   "chg_pct": 0.95,
+   "sma50": 375.81,
    "above_sma": true
   },
   {
    "symbol": "MSFT",
-   "price": 507.25,
+   "price": 508.29,
    "prev_close": 506.24,
-   "chg": 1.01,
-   "chg_pct": 0.2,
-   "sma50": 519.61,
+   "chg": 2.05,
+   "chg_pct": 0.4,
+   "sma50": 519.94,
    "above_sma": false
   },
   {
@@ -1505,43 +1505,43 @@
    "prev_close": 351.91,
    "chg": 0.54,
    "chg_pct": 0.15,
-   "sma50": 340.41,
+   "sma50": 341.15,
    "above_sma": true
   },
   {
    "symbol": "AVGO",
-   "price": 353.84,
+   "price": 354.05,
    "prev_close": 341.6,
-   "chg": 12.24,
-   "chg_pct": 3.58,
-   "sma50": 344.35,
-   "above_sma": false
+   "chg": 12.45,
+   "chg_pct": 3.64,
+   "sma50": 344.15,
+   "above_sma": true
   },
   {
    "symbol": "JPM",
-   "price": 324.06,
+   "price": 324.11,
    "prev_close": 329.96,
-   "chg": -5.9,
-   "chg_pct": -1.79,
-   "sma50": 339.54,
+   "chg": -5.85,
+   "chg_pct": -1.77,
+   "sma50": 338.93,
    "above_sma": false
   },
   {
    "symbol": "BRK-B",
-   "price": 574.77,
+   "price": 574.62,
    "prev_close": 586.76,
-   "chg": -11.99,
-   "chg_pct": -2.04,
-   "sma50": 533.01,
+   "chg": -12.14,
+   "chg_pct": -2.07,
+   "sma50": 534.37,
    "above_sma": true
   },
   {
    "symbol": "SPY",
-   "price": 730.32,
+   "price": 730.2,
    "prev_close": 732.44,
-   "chg": -2.12,
-   "chg_pct": -0.29,
-   "sma50": 763.15,
+   "chg": -2.24,
+   "chg_pct": -0.31,
+   "sma50": 762.51,
    "above_sma": false
   }
  ],
@@ -1595,7 +1595,7 @@
      9.98,
      3.44,
      -10.39,
-     -26.4
+     -26.23
     ]
    },
    {
@@ -1613,7 +1613,7 @@
      -4.71,
      1.39,
      -18.67,
-     1.12
+     0.93
     ]
    },
    {
@@ -1631,7 +1631,7 @@
      -4.35,
      -4.09,
      -3.53,
-     11.21
+     11.4
     ]
    },
    {
@@ -1649,7 +1649,7 @@
      -1.14,
      29.96,
      -17.48,
-     4.23
+     5.02
     ]
    },
    {
@@ -1667,7 +1667,7 @@
      2.81,
      26.7,
      -15.19,
-     -0.1
+     0.23
     ]
    },
    {
@@ -1685,7 +1685,7 @@
      18.23,
      -3.57,
      12.68,
-     -3.71
+     -4.02
     ]
    },
    {
@@ -1703,7 +1703,7 @@
      9.16,
      1.11,
      1.76,
-     -2.81
+     -2.61
     ]
    },
    {
@@ -1739,7 +1739,7 @@
      -4.87,
      -5.17,
      -7.15,
-     8.51
+     8.58
     ]
    },
    {
@@ -1757,7 +1757,7 @@
      1.2,
      -7.08,
      1.88,
-     -3.85
+     -3.84
     ]
    },
    {
@@ -1775,7 +1775,7 @@
      -1.47,
      -1.21,
      8.94,
-     5.95
+     5.92
     ]
    },
    {
@@ -1793,7 +1793,7 @@
      2.68,
      -0.58,
      -0.91,
-     -3.36
+     -3.38
     ]
    }
   ]
@@ -1801,37 +1801,37 @@
  "risk": [
   {
    "name": "NVDA",
-   "ann_ret": -17.01,
-   "vol": 38.82
+   "ann_ret": -16.82,
+   "vol": 38.8
   },
   {
    "name": "GOOGL",
-   "ann_ret": -0.46,
-   "vol": 33.64
+   "ann_ret": -0.65,
+   "vol": 33.63
   },
   {
    "name": "AMZN",
-   "ann_ret": 20.19,
-   "vol": 33.91
+   "ann_ret": 20.39,
+   "vol": 33.93
   },
   {
    "name": "AMD",
-   "ann_ret": 129.22,
-   "vol": 73.57
+   "ann_ret": 130.97,
+   "vol": 73.62
   },
   {
    "name": "META",
-   "ann_ret": 2.8,
+   "ann_ret": 3.14,
    "vol": 41.68
   },
   {
    "name": "TSLA",
-   "ann_ret": -4.08,
+   "ann_ret": -4.39,
    "vol": 45.48
   },
   {
    "name": "MSFT",
-   "ann_ret": 2.74,
+   "ann_ret": 2.95,
    "vol": 33.95
   },
   {
@@ -1841,22 +1841,22 @@
   },
   {
    "name": "AVGO",
-   "ann_ret": 3.93,
-   "vol": 48.96
+   "ann_ret": 4.0,
+   "vol": 48.97
   },
   {
    "name": "JPM",
-   "ann_ret": 8.27,
-   "vol": 22.9
+   "ann_ret": 8.28,
+   "vol": 22.89
   },
   {
    "name": "BRK-B",
-   "ann_ret": 14.02,
-   "vol": 15.14
+   "ann_ret": 13.99,
+   "vol": 15.15
   },
   {
    "name": "SPY",
-   "ann_ret": 10.68,
+   "ann_ret": 10.67,
    "vol": 13.76
   },
   {
