@@ -1,5 +1,5 @@
 {
- "generated_pkt": "2026-11-20 02:48:15 PKT",
+ "generated_pkt": "2026-11-20 03:46:06 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
@@ -42,18 +42,18 @@
  "live": {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "equity": 99333.18,
-  "cash": 55736.7,
-  "day_pl": -121.21,
-  "day_pl_pct": -0.12,
-  "total_pl": -666.82,
-  "total_pl_pct": -0.67,
+  "equity": 99324.57,
+  "cash": 64339.52,
+  "day_pl": -129.82,
+  "day_pl_pct": -0.13,
+  "total_pl": -675.43,
+  "total_pl_pct": -0.68,
   "spy_equity": 97639.96,
   "spy_day_pct": -0.52,
   "spy_total_pct": -2.36,
-  "vs_spy_pct": 1.69,
-  "last_trade_date": "2026-11-19",
-  "positions": 5
+  "vs_spy_pct": 1.68,
+  "last_trade_date": "2026-11-20",
+  "positions": 4
  },
  "backtest": {
   "label": "HYPOTHETICAL BACKTEST - not actual results",
@@ -1360,7 +1360,7 @@
    {
     "d": "2026-11-20",
     "md": "2026-11-19",
-    "s": 99333.18,
+    "s": 99324.57,
     "b": 97639.96
    }
   ]
@@ -1383,12 +1383,8 @@
    "value": 8580.6
   },
   {
-   "label": "TSLA",
-   "value": 8611.43
-  },
-  {
    "label": "Cash",
-   "value": 55736.7
+   "value": 64339.52
   }
  ],
  "holdings": [
@@ -1425,7 +1421,7 @@
    "chg": -7.4,
    "chg_pct": -2.09,
    "value": 8666.25,
-   "weight_pct": 8.72,
+   "weight_pct": 8.73,
    "cost_basis": 8860.1,
    "avg_cost": 354.4,
    "unrealized": -193.85,
@@ -1443,19 +1439,6 @@
    "avg_cost": 587.35,
    "unrealized": -229.6,
    "total_ret_pct": -2.61
-  },
-  {
-   "symbol": "TSLA",
-   "shares": 23,
-   "price": 374.41,
-   "chg": -9.31,
-   "chg_pct": -2.43,
-   "value": 8611.43,
-   "weight_pct": 8.67,
-   "cost_basis": 8751.27,
-   "avg_cost": 380.49,
-   "unrealized": -139.84,
-   "total_ret_pct": -1.6
   }
  ],
  "watchlist": [
@@ -1888,8 +1871,33 @@
    "vol": 12.24
   }
  ],
- "trades_today": [],
+ "trades_today": [
+  {
+   "timestamp_pkt": "2026-11-20 03:46 PKT",
+   "date": "2026-11-20",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "TSLA",
+   "shares": "23",
+   "price": "374.41",
+   "fee": "8.61",
+   "value": "8611.43",
+   "reason": "close $374.41 fell below 50-day MA $376.03; move slice to cash"
+  }
+ ],
  "recent_trades": [
+  {
+   "timestamp_pkt": "2026-11-20 03:46 PKT",
+   "date": "2026-11-20",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "TSLA",
+   "shares": "23",
+   "price": "374.41",
+   "fee": "8.61",
+   "value": "8611.43",
+   "reason": "close $374.41 fell below 50-day MA $376.03; move slice to cash"
+  },
   {
    "timestamp_pkt": "2026-11-19 03:50 PKT",
    "date": "2026-11-19",
