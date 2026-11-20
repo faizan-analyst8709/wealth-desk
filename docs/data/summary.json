@@ -1,10 +1,10 @@
 {
- "generated_pkt": "2026-11-20 21:56:07 PKT",
+ "generated_pkt": "2026-11-20 22:55:16 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
  "data_market_date": "2026-11-20",
- "data_price_time_pkt": "2026-11-20 21:56 PKT",
+ "data_price_time_pkt": "2026-11-20 22:55 PKT",
  "session_open": true,
  "stale_symbols": [],
  "price_basis": "Intraday: US session is open (opened 7:30 PM PKT); prices are live/early-session, signals use the previous completed close.",
@@ -42,16 +42,16 @@
  "live": {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "equity": 98218.07,
+  "equity": 97944.76,
   "cash": 64339.52,
-  "day_pl": -1236.32,
-  "day_pl_pct": -1.24,
-  "total_pl": -1781.93,
-  "total_pl_pct": -1.78,
-  "spy_equity": 95902.31,
-  "spy_day_pct": -2.29,
-  "spy_total_pct": -4.1,
-  "vs_spy_pct": 2.32,
+  "day_pl": -1509.63,
+  "day_pl_pct": -1.52,
+  "total_pl": -2055.24,
+  "total_pl_pct": -2.06,
+  "spy_equity": 95539.5,
+  "spy_day_pct": -2.66,
+  "spy_total_pct": -4.46,
+  "vs_spy_pct": 2.41,
   "last_trade_date": "2026-11-20",
   "positions": 4
  },
@@ -80,11 +80,11 @@
  },
  "metrics": {
   "basis": "chain-linked backtest + live daily equity; Sharpe uses 0% risk-free rate",
-  "sharpe": -0.81,
-  "beta": 0.6,
-  "vol": 12.28,
-  "max_dd": -17.64,
-  "ann_ret": -10.12
+  "sharpe": -0.83,
+  "beta": 0.61,
+  "vol": 12.31,
+  "max_dd": -17.87,
+  "ann_ret": -10.36
  },
  "curve": {
   "backtest": [
@@ -1360,27 +1360,27 @@
    {
     "d": "2026-11-20",
     "md": "2026-11-20",
-    "s": 98218.07,
-    "b": 95902.31
+    "s": 97944.76,
+    "b": 95539.5
    }
   ]
  },
  "allocation": [
   {
    "label": "AAPL",
-   "value": 8660.75
+   "value": 8643.0
   },
   {
    "label": "AMZN",
-   "value": 8835.57
+   "value": 8750.49
   },
   {
    "label": "AVGO",
-   "value": 7770.5
+   "value": 7652.75
   },
   {
    "label": "BRK-B",
-   "value": 8611.73
+   "value": 8559.0
   },
   {
    "label": "Cash",
@@ -1391,162 +1391,162 @@
   {
    "symbol": "AAPL",
    "shares": 25,
-   "price": 346.43,
-   "chg": -2.78,
-   "chg_pct": -0.8,
-   "value": 8660.75,
+   "price": 345.72,
+   "chg": -3.49,
+   "chg_pct": -1.0,
+   "value": 8643.0,
    "weight_pct": 8.82,
    "cost_basis": 8806.55,
    "avg_cost": 352.26,
-   "unrealized": -145.8,
-   "total_ret_pct": -1.66
+   "unrealized": -163.55,
+   "total_ret_pct": -1.86
   },
   {
    "symbol": "AMZN",
    "shares": 35,
-   "price": 252.44,
-   "chg": -4.93,
-   "chg_pct": -1.91,
-   "value": 8835.57,
-   "weight_pct": 9.0,
+   "price": 250.01,
+   "chg": -7.36,
+   "chg_pct": -2.86,
+   "value": 8750.49,
+   "weight_pct": 8.93,
    "cost_basis": 9035.18,
    "avg_cost": 258.15,
-   "unrealized": -199.6,
-   "total_ret_pct": -2.21
+   "unrealized": -284.69,
+   "total_ret_pct": -3.15
   },
   {
    "symbol": "AVGO",
    "shares": 25,
-   "price": 310.82,
-   "chg": -35.83,
-   "chg_pct": -10.34,
-   "value": 7770.5,
-   "weight_pct": 7.91,
+   "price": 306.11,
+   "chg": -40.54,
+   "chg_pct": -11.69,
+   "value": 7652.75,
+   "weight_pct": 7.81,
    "cost_basis": 8860.1,
    "avg_cost": 354.4,
-   "unrealized": -1089.6,
-   "total_ret_pct": -12.3
+   "unrealized": -1207.35,
+   "total_ret_pct": -13.63
   },
   {
    "symbol": "BRK-B",
    "shares": 15,
-   "price": 574.12,
-   "chg": 2.08,
-   "chg_pct": 0.36,
-   "value": 8611.73,
-   "weight_pct": 8.77,
+   "price": 570.6,
+   "chg": -1.44,
+   "chg_pct": -0.25,
+   "value": 8559.0,
+   "weight_pct": 8.74,
    "cost_basis": 8810.2,
    "avg_cost": 587.35,
-   "unrealized": -198.48,
-   "total_ret_pct": -2.25
+   "unrealized": -251.2,
+   "total_ret_pct": -2.85
   }
  ],
  "watchlist": [
   {
    "symbol": "NVDA",
-   "price": 136.17,
+   "price": 135.54,
    "prev_close": 145.98,
-   "chg": -9.81,
-   "chg_pct": -6.72,
+   "chg": -10.44,
+   "chg_pct": -7.15,
    "sma50": 208.86,
    "above_sma": false
   },
   {
    "symbol": "GOOGL",
-   "price": 275.96,
+   "price": 273.35,
    "prev_close": 272.66,
-   "chg": 3.3,
-   "chg_pct": 1.21,
+   "chg": 0.69,
+   "chg_pct": 0.25,
    "sma50": 323.76,
    "above_sma": false
   },
   {
    "symbol": "AMZN",
-   "price": 252.44,
+   "price": 250.01,
    "prev_close": 257.37,
-   "chg": -4.93,
-   "chg_pct": -1.91,
+   "chg": -7.36,
+   "chg_pct": -2.86,
    "sma50": 255.23,
    "above_sma": true
   },
   {
    "symbol": "AMD",
-   "price": 436.06,
+   "price": 433.79,
    "prev_close": 489.19,
-   "chg": -53.13,
-   "chg_pct": -10.86,
+   "chg": -55.4,
+   "chg_pct": -11.32,
    "sma50": 554.93,
    "above_sma": false
   },
   {
    "symbol": "META",
-   "price": 575.09,
+   "price": 570.3,
    "prev_close": 596.22,
-   "chg": -21.13,
-   "chg_pct": -3.54,
+   "chg": -25.92,
+   "chg_pct": -4.35,
    "sma50": 678.4,
    "above_sma": false
   },
   {
    "symbol": "TSLA",
-   "price": 354.59,
+   "price": 352.24,
    "prev_close": 374.41,
-   "chg": -19.82,
-   "chg_pct": -5.29,
+   "chg": -22.17,
+   "chg_pct": -5.92,
    "sma50": 376.03,
    "above_sma": false
   },
   {
    "symbol": "MSFT",
-   "price": 488.66,
+   "price": 489.23,
    "prev_close": 498.3,
-   "chg": -9.64,
-   "chg_pct": -1.93,
+   "chg": -9.07,
+   "chg_pct": -1.82,
    "sma50": 520.06,
    "above_sma": false
   },
   {
    "symbol": "AAPL",
-   "price": 346.43,
+   "price": 345.72,
    "prev_close": 349.21,
-   "chg": -2.78,
-   "chg_pct": -0.8,
+   "chg": -3.49,
+   "chg_pct": -1.0,
    "sma50": 341.6,
    "above_sma": true
   },
   {
    "symbol": "AVGO",
-   "price": 310.82,
+   "price": 306.11,
    "prev_close": 346.65,
-   "chg": -35.83,
-   "chg_pct": -10.34,
+   "chg": -40.54,
+   "chg_pct": -11.69,
    "sma50": 343.86,
    "above_sma": true
   },
   {
    "symbol": "JPM",
-   "price": 315.55,
+   "price": 313.93,
    "prev_close": 320.22,
-   "chg": -4.68,
-   "chg_pct": -1.46,
+   "chg": -6.29,
+   "chg_pct": -1.96,
    "sma50": 338.26,
    "above_sma": false
   },
   {
    "symbol": "BRK-B",
-   "price": 574.12,
+   "price": 570.6,
    "prev_close": 572.04,
-   "chg": 2.08,
-   "chg_pct": 0.36,
+   "chg": -1.44,
+   "chg_pct": -0.25,
    "sma50": 535.67,
    "above_sma": true
   },
   {
    "symbol": "SPY",
-   "price": 703.13,
+   "price": 700.47,
    "prev_close": 715.87,
-   "chg": -12.74,
-   "chg_pct": -1.78,
+   "chg": -15.4,
+   "chg_pct": -2.15,
    "sma50": 761.67,
    "above_sma": false
   }
@@ -1583,7 +1583,7 @@
      -2.0,
      1.2,
      -4.1,
-     -4.74
+     -5.01
     ]
    },
    {
@@ -1601,7 +1601,7 @@
      9.98,
      3.44,
      -10.39,
-     -33.46
+     -33.76
     ]
    },
    {
@@ -1619,7 +1619,7 @@
      -4.71,
      1.39,
      -18.67,
-     -1.39
+     -2.32
     ]
    },
    {
@@ -1637,7 +1637,7 @@
      -4.35,
      -4.09,
      -3.53,
-     5.03
+     4.02
     ]
    },
    {
@@ -1655,7 +1655,7 @@
      -1.14,
      29.96,
      -17.48,
-     -13.62
+     -14.07
     ]
    },
    {
@@ -1673,7 +1673,7 @@
      2.81,
      26.7,
      -15.19,
-     -6.49
+     -7.27
     ]
    },
    {
@@ -1691,7 +1691,7 @@
      18.23,
      -3.57,
      12.68,
-     -11.31
+     -11.9
     ]
    },
    {
@@ -1709,7 +1709,7 @@
      9.16,
      1.11,
      1.76,
-     -6.37
+     -6.26
     ]
    },
    {
@@ -1727,7 +1727,7 @@
      2.57,
      5.1,
      3.49,
-     0.52
+     0.32
     ]
    },
    {
@@ -1745,7 +1745,7 @@
      -4.87,
      -5.17,
      -7.15,
-     -4.68
+     -6.12
     ]
    },
    {
@@ -1763,7 +1763,7 @@
      1.2,
      -7.08,
      1.88,
-     -6.38
+     -6.86
     ]
    },
    {
@@ -1781,7 +1781,7 @@
      -1.47,
      -1.21,
      8.94,
-     5.83
+     5.18
     ]
    },
    {
@@ -1799,7 +1799,7 @@
      2.68,
      -0.58,
      -0.91,
-     -6.96
+     -7.31
     ]
    }
   ]
@@ -1807,68 +1807,68 @@
  "risk": [
   {
    "name": "NVDA",
-   "ann_ret": -24.83,
-   "vol": 39.35
+   "ann_ret": -25.18,
+   "vol": 39.43
   },
   {
    "name": "GOOGL",
-   "ann_ret": -2.92,
-   "vol": 33.7
+   "ann_ret": -3.83,
+   "vol": 33.68
   },
   {
    "name": "AMZN",
-   "ann_ret": 13.38,
-   "vol": 34.08
+   "ann_ret": 12.29,
+   "vol": 34.15
   },
   {
    "name": "AMD",
-   "ann_ret": 88.87,
-   "vol": 74.63
+   "ann_ret": 87.9,
+   "vol": 74.7
   },
   {
    "name": "META",
-   "ann_ret": -3.77,
-   "vol": 41.8
+   "ann_ret": -4.56,
+   "vol": 41.87
   },
   {
    "name": "TSLA",
-   "ann_ret": -11.59,
-   "vol": 45.67
+   "ann_ret": -12.17,
+   "vol": 45.75
   },
   {
    "name": "MSFT",
-   "ann_ret": -1.03,
+   "ann_ret": -0.92,
    "vol": 33.93
   },
   {
    "name": "AAPL",
-   "ann_ret": 29.4,
-   "vol": 24.83
+   "ann_ret": 29.14,
+   "vol": 24.84
   },
   {
    "name": "AVGO",
-   "ann_ret": -8.68,
-   "vol": 49.91
+   "ann_ret": -10.06,
+   "vol": 50.21
   },
   {
    "name": "JPM",
-   "ann_ret": 5.37,
-   "vol": 22.89
+   "ann_ret": 4.83,
+   "vol": 22.92
   },
   {
    "name": "BRK-B",
-   "ann_ret": 13.77,
+   "ann_ret": 13.08,
    "vol": 15.1
   },
   {
    "name": "SPY",
-   "ann_ret": 6.5,
-   "vol": 13.97
+   "ann_ret": 6.09,
+   "vol": 14.02
   },
   {
    "name": "Strategy*",
-   "ann_ret": -10.12,
-   "vol": 12.28
+   "ann_ret": -10.36,
+   "vol": 12.31
   }
  ],
  "trades_today": [
