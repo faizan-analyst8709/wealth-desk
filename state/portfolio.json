@@ -1,20 +1,16 @@
 {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "cash": 64339.519490000006,
+  "cash": 80572.22054000001,
   "positions": {
-    "AMZN": 35,
     "AAPL": 25,
-    "BRK-B": 15,
-    "AVGO": 25
+    "BRK-B": 15
   },
   "cost_basis": {
-    "AMZN": 9035.17615,
     "AAPL": 8806.54775,
-    "BRK-B": 8810.2014,
-    "AVGO": 8860.10125
+    "BRK-B": 8810.2014
   },
-  "last_trade_date": "2026-11-20",
+  "last_trade_date": "2026-11-21",
   "spy_shares": 136.39342471738297,
   "spy_start_price": 732.44,
   "last_month": "2026-11"

@@ -5,3 +5,5 @@ timestamp_pkt,date,phase,side,symbol,shares,price,fee,value,reason
 2026-11-18 11:09 PKT,2026-11-18,live,BUY,BRK-B,15,586.76,8.8,8801.4,close $586.76 above 50-day MA $533.01; buy to equal weight 9.09%
 2026-11-19 03:50 PKT,2026-11-19,live,BUY,AVGO,25,354.05,8.85,8851.25,close $354.05 above 50-day MA $344.15; buy to equal weight 9.09%
 2026-11-20 03:46 PKT,2026-11-20,live,SELL,TSLA,23,374.41,8.61,8611.43,close $374.41 fell below 50-day MA $376.03; move slice to cash
+2026-11-21 03:44 PKT,2026-11-21,live,SELL,AMZN,35,246.82,8.64,8638.7,close $246.82 fell below 50-day MA $255.03; move slice to cash
+2026-11-21 03:44 PKT,2026-11-21,live,SELL,AVGO,25,304.41,7.61,7610.25,close $304.41 fell below 50-day MA $342.71; move slice to cash

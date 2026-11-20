@@ -1,5 +1,5 @@
 {
- "generated_pkt": "2026-11-21 02:44:55 PKT",
+ "generated_pkt": "2026-11-21 03:44:34 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
@@ -42,18 +42,18 @@
  "live": {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "equity": 97702.47,
-  "cash": 64339.52,
-  "day_pl": -357.05,
-  "day_pl_pct": -0.36,
-  "total_pl": -2297.53,
-  "total_pl_pct": -2.3,
+  "equity": 97686.22,
+  "cash": 80572.22,
+  "day_pl": -373.3,
+  "day_pl_pct": -0.38,
+  "total_pl": -2313.78,
+  "total_pl_pct": -2.31,
   "spy_equity": 94085.55,
   "spy_day_pct": -1.8,
   "spy_total_pct": -5.91,
-  "vs_spy_pct": 3.62,
-  "last_trade_date": "2026-11-20",
-  "positions": 4
+  "vs_spy_pct": 3.6,
+  "last_trade_date": "2026-11-21",
+  "positions": 2
  },
  "backtest": {
   "label": "HYPOTHETICAL BACKTEST - not actual results",
@@ -1366,7 +1366,7 @@
    {
     "d": "2026-11-21",
     "md": "2026-11-20",
-    "s": 97702.47,
+    "s": 97686.22,
     "b": 94085.55
    }
   ]
@@ -1377,20 +1377,12 @@
    "value": 8564.0
   },
   {
-   "label": "AMZN",
-   "value": 8638.7
-  },
-  {
-   "label": "AVGO",
-   "value": 7610.25
-  },
-  {
    "label": "BRK-B",
    "value": 8550.0
   },
   {
    "label": "Cash",
-   "value": 64339.52
+   "value": 80572.22
   }
  ],
  "holdings": [
@@ -1406,32 +1398,6 @@
    "avg_cost": 352.26,
    "unrealized": -242.55,
    "total_ret_pct": -2.75
-  },
-  {
-   "symbol": "AMZN",
-   "shares": 35,
-   "price": 246.82,
-   "chg": -10.55,
-   "chg_pct": -4.1,
-   "value": 8638.7,
-   "weight_pct": 8.84,
-   "cost_basis": 9035.18,
-   "avg_cost": 258.15,
-   "unrealized": -396.48,
-   "total_ret_pct": -4.39
-  },
-  {
-   "symbol": "AVGO",
-   "shares": 25,
-   "price": 304.41,
-   "chg": -42.24,
-   "chg_pct": -12.19,
-   "value": 7610.25,
-   "weight_pct": 7.79,
-   "cost_basis": 8860.1,
-   "avg_cost": 354.4,
-   "unrealized": -1249.85,
-   "total_ret_pct": -14.11
   },
   {
    "symbol": "BRK-B",
@@ -1877,8 +1843,57 @@
    "vol": 12.29
   }
  ],
- "trades_today": [],
+ "trades_today": [
+  {
+   "timestamp_pkt": "2026-11-21 03:44 PKT",
+   "date": "2026-11-21",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "AMZN",
+   "shares": "35",
+   "price": "246.82",
+   "fee": "8.64",
+   "value": "8638.7",
+   "reason": "close $246.82 fell below 50-day MA $255.03; move slice to cash"
+  },
+  {
+   "timestamp_pkt": "2026-11-21 03:44 PKT",
+   "date": "2026-11-21",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "AVGO",
+   "shares": "25",
+   "price": "304.41",
+   "fee": "7.61",
+   "value": "7610.25",
+   "reason": "close $304.41 fell below 50-day MA $342.71; move slice to cash"
+  }
+ ],
  "recent_trades": [
+  {
+   "timestamp_pkt": "2026-11-21 03:44 PKT",
+   "date": "2026-11-21",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "AVGO",
+   "shares": "25",
+   "price": "304.41",
+   "fee": "7.61",
+   "value": "7610.25",
+   "reason": "close $304.41 fell below 50-day MA $342.71; move slice to cash"
+  },
+  {
+   "timestamp_pkt": "2026-11-21 03:44 PKT",
+   "date": "2026-11-21",
+   "phase": "live",
+   "side": "SELL",
+   "symbol": "AMZN",
+   "shares": "35",
+   "price": "246.82",
+   "fee": "8.64",
+   "value": "8638.7",
+   "reason": "close $246.82 fell below 50-day MA $255.03; move slice to cash"
+  },
   {
    "timestamp_pkt": "2026-11-20 03:46 PKT",
    "date": "2026-11-20",
