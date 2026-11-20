@@ -1,5 +1,5 @@
 {
- "generated_pkt": "2026-11-20 08:50:53 PKT",
+ "generated_pkt": "2026-11-20 13:18:45 PKT",
  "paper_trading_only": true,
  "disclaimer": "Simulated paper trading, not financial advice. No real money or brokerage. Backtest results are hypothetical and not a guarantee of future returns.",
  "data_source": "yahoo-chart-v8",
@@ -1481,10 +1481,10 @@
   {
    "symbol": "META",
    "price": 596.22,
-   "prev_close": 618.87,
-   "chg": -22.65,
-   "chg_pct": -3.66,
-   "sma50": 679.36,
+   "prev_close": 616.38,
+   "chg": -20.16,
+   "chg_pct": -3.27,
+   "sma50": 678.4,
    "above_sma": false
   },
   {
@@ -1673,7 +1673,7 @@
      2.81,
      26.7,
      -15.19,
-     0.23
+     -3.05
     ]
    },
    {
@@ -1827,8 +1827,8 @@
   },
   {
    "name": "META",
-   "ann_ret": 3.14,
-   "vol": 41.68
+   "ann_ret": -0.25,
+   "vol": 41.73
   },
   {
    "name": "TSLA",
