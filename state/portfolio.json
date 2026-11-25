@@ -1,16 +1,18 @@
 {
   "start_date": "2026-11-18",
   "start_capital": 100000.0,
-  "cash": 80572.22054000001,
+  "cash": 71715.7329,
   "positions": {
     "AAPL": 25,
-    "BRK-B": 15
+    "BRK-B": 15,
+    "TSLA": 23
   },
   "cost_basis": {
     "AAPL": 8806.54775,
-    "BRK-B": 8810.2014
+    "BRK-B": 8810.2014,
+    "TSLA": 8856.48764
   },
-  "last_trade_date": "2026-11-21",
+  "last_trade_date": "2026-11-25",
   "spy_shares": 136.39342471738297,
   "spy_start_price": 732.44,
   "last_month": "2026-11"

@@ -7,3 +7,4 @@ timestamp_pkt,date,phase,side,symbol,shares,price,fee,value,reason
 2026-11-20 03:46 PKT,2026-11-20,live,SELL,TSLA,23,374.41,8.61,8611.43,close $374.41 fell below 50-day MA $376.03; move slice to cash
 2026-11-21 03:44 PKT,2026-11-21,live,SELL,AMZN,35,246.82,8.64,8638.7,close $246.82 fell below 50-day MA $255.03; move slice to cash
 2026-11-21 03:44 PKT,2026-11-21,live,SELL,AVGO,25,304.41,7.61,7610.25,close $304.41 fell below 50-day MA $342.71; move slice to cash
+2026-11-25 10:42 PKT,2026-11-25,live,BUY,TSLA,23,384.68,8.85,8847.64,close $384.68 above 50-day MA $376.73; buy to equal weight 9.09%
