@@ -1,7 +1,8 @@
 name: Update Wealth Desk (hourly, paper trading)
 on:
+  # Re-registered after 21 Nov disable left the :00 cron stalled (no scheduled runs after re-enable).
   schedule:
-    - cron: '0 * * * *'
+    - cron: '5 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
